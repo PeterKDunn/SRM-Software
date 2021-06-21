@@ -1,0 +1,47 @@
+bookdown::gitbook:
+  default: true 
+  css: [css/style.css]
+  includes:
+    in_header: [html/favicon.html,js/fold.js, html/google_analytics.html, html/includeme.html, js/examplefold.js] 
+    after_body: [html/copyright.html,js/webex.js]
+  split_by: section
+  df_print: paged
+  config:
+    toc:
+      collapse: subsection
+      scroll_highlight: yes
+      before: |
+        <li><a href="./index.html">SCI110 software</a></li>
+      after: |
+        <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+    download: [pdf]
+    edit: null
+    sharing:
+      facebook: no
+      twitter: no
+      google: no
+      weibo: no
+      instapaper: no
+      vk: no
+      all: null
+bookdown::html_chapters:
+  css: [css/style.css, css/toc.css]
+bookdown::pdf_book:
+  extra_dependencies: animate
+  includes:
+    in_header: [latex/preamble.tex]
+    before_body: latex/before_body.tex
+    after_body: latex/after_body.tex
+  keep_tex: yes
+#  dev: "cairo_pdf"
+  pandoc_args: ["-V", "papersize=A4", "--top-level-division=chapter"]
+  toc_depth: 3
+  toc_unnumbered: no
+  toc_appendix: yes
+  df_print: kable
+bookdown::epub_book:
+  stylesheet: css/style.css
+bookdown::word_document2:
+  toc: yes
+  reference_docx: "./word/template.docx"
+  fig_caption: true

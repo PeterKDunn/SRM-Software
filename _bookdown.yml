@@ -1,0 +1,28 @@
+#book_filename: bookdown
+output_dir: _book
+new_session: yes
+book_filename: "SRM_software.Rmd"
+before_chapter_script: ["R/setup.R"]
+clean: [packages.bib, bookdown.bbl]
+delete_merged_file: true
+#new_session: true
+rmd_files: [
+"index.Rmd",
+"01-intro.Rmd",
+"02-jamovi-general.Rmd",
+"03-jamovi-chisq.Rmd",
+"04-jamovi-two-t.Rmd",
+"05-jamovi-graphs.Rmd",
+"11-SPSS-general.Rmd",
+"12-SPSS-chisq.Rmd",
+"13-SPSS-two-t.Rmd",
+"14-SPSS-graphs.Rmd",
+"15-References.Rmd"
+]
+language:
+  label:
+    lem: "Think " 
+    fig: "FIGURE "
+    tab: "TABLE "
+    ui:
+      edit: "Edit"

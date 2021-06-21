@@ -1,0 +1,231 @@
+---
+title: "Scientific Research and Methodology: Software"
+subtitle:  "An introduction to quantitative research and statistics in science and health: Using software"
+author: "Peter K. Dunn"
+geometry: margin=27mm
+description: "Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)"
+output: webex::webex_default
+cover-image: "images/cover-Software"
+date: "Last updated: `r  format(Sys.time(), '%B %d, %Y')`"
+bibliography: ["ReferenceList.bib"]
+biblio-style: plain
+link-citations: yes  
+documentclass: krantz
+always_allow_html: yes
+links-as-notes: true
+site: bookdown::bookdown_site
+colorlinks: yes
+#lot: no
+#lof: no
+fontsize: 11pt
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.7"
+---
+
+
+```{r echo=FALSE, results='asis'}
+options(knitr.kable.NA = '')
+knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackage{xcolor}', x, fixed = TRUE)})
+```
+
+
+
+
+# Preface {-}
+
+<!-- TO RENDER -->
+<!-- # render_book("index.html") -->
+<!-- # render_book("index.html", "bookdown::pdf_book") -->
+<!-- # render_book("index.html"); render_book("index.html", "bookdown::pdf_book") -->
+
+<!--  TO PUBLISH ON BOOKDOWN:  -->
+<!-- publish_book(name="SRM-software") -->
+
+
+
+<!-- THIS MIGHT WORK:    -->
+<!-- render_book("index.html", "bookdown::word_document2")      -->
+
+<!-- Then: netlify deploy --build . --prod -->
+
+
+<!-- This seems to work to find non-ASCII characters:  perl -ane '{ if(m/[[:^ascii:]]/) { print  } }' *.Rmd  -->
+<!--   BETTER:  pcregrep --color='auto' -n "[\x80-\xFF]" *.Rmd  -->
+<!-- From the _book directory: netlify deploy --prod -->
+
+
+
+
+<!-- # It seems that figures default to:  -->
+<!-- #     fig.width=7 (inches) and fig.height = 5 (inches) -->
+<!-- #  -->
+
+
+
+This book has been prepared for use with the book 
+`r if (knitr::is_latex_output()) {
+   'Scientific Research and Methodology,'
+} else {
+   '[Scientific Research and Methodology](https://bookdown.org/pkaldunn/Book/),'
+}`
+which is an introduction to quantitative research methods in the scientific, engineering and health disciplines.
+
+This book is an introduction to quantitative research methods in the scientific and health disciplines,
+and introduces the whole research process,
+from asking a research question to analysis and reporting of the data.
+The focus, however, is on the analysis of data.
+
+
+
+
+
+## Statistical software {-}
+
+This manual explains how to conduct some of the analyses in the book
+[*Scientific Research Method*](https://srm-course.netlify.app/index.html)
+using software.
+We discuss using
+[jamovi](https://www.jamovi.org/) 
+[@Software:jamovi]
+and
+[SPSS](https://www.ibm.com/products/spss-statistics)
+[@Software:SPSS].
+only.
+
+jamovi is *free* and is like (but not exactly the same as) SPSS.
+From the [jamovi homepage (sic)](https://www.jamovi.org/):
+
+> jamovi is a new '3rd generation' statistical spreadsheet. 
+> designed from the ground up to be easy to use, 
+> jamovi is a compelling alternative 
+> to costly statistical products such as SPSS and SAS.
+
+
+
+
+
+
+
+## Icons used on this book {-}
+
+The icons used in this book have meanings; for example:
+
+```{block2, type="rmdobjectives"}
+These chunks introduce the objectives for the chapters of the book.
+```
+
+
+
+
+```{block2, type="rmdtip"}
+These chunks offer helpful information.
+```
+
+
+
+
+```{block2, type="rmdimportant"}
+These chunks highlight common mistakes or warnings, about a particular concept or about using a formula.
+```
+
+
+
+
+## Using jamovi and SPSS rather than a spreadsheet {-}
+
+Many people use spreadsheets (such as Microsoft Excel) rather than statistical software.
+The following information comes from 
+[@mypapers:ScientificResearch]:
+
+
+Using spreadsheets requires extreme care;
+many extremely expensive and dangerous errors have been made through using spreadsheets
+[@altarawneh2017pilot],
+including problems [when reporting the 2020 COVID-19 pandemic](https://www.zdnet.com/article/excel-errors-microsofts-spreadsheet-may-be-hazardous-to-your-health/).
+
+These problems emerge for many different reasons:
+  
+* Spreadsheets often change the entered data 
+  (for example, reformatting entries as dates if the spreadsheet *thinks* the data should be a date)
+  in the interest of being 'user-friendly',
+  even when not appropriate.
+  This has had dire consequences [@ziemann2016gene].
+* Many spreadsheets have errors in formulas [@panko1998hitting], but these are incredible difficult to locate and hence fix 
+  (@galletta1996spreadsheet, @panko2016we).
+* Spreadsheets do not leave a record of how the data have been analysed;
+  for example, formulas can be very difficult to understand and parse.
+  Keeping a record of the analysis, new variables that have been created, and other operations with the data
+  is called [**reproducible research**](#ReproducibleResearch).
+  Reproducibility ensures, among other advantages,
+  that the results can be checked by others.
+* Excel has bugs 
+  (@keeling2004numerical, @melard2014accuracy)
+  even in very basic operations
+  (@berger2007nonstandard, @hargreaves2010polynomial).
+  After trying to fix these bugs, sometimes they are made even worse
+  [@mccullough2002accuracy].
+
+Spreadsheets can be used for research and analysis...
+but you must be very careful!
+Many of the problems are due to human error,
+and some emerge because Excel is being used for purposes it is not really designed for (i.e. scientific analysis).
+
+
+## Version of jamovi and SPSS used in this book {-}
+
+### jamovi {-}
+
+For **Semester 1 2021** at USC,
+the jamovi version installed in computer labs is
+jamovi v1.2.27.
+
+Since then,
+new versions of jamovi have been released.
+One significant improvement in recent versions that is relevant for this course 
+is the addition of making
+[stacked bar charts](https://bookdown.org/pkaldunn/Book/two-qualitative-variables.html#StackedBarCharts)
+(since version 1.6.14, released 09 February 2021).
+
+We **strongly recommend** installing the 
+[most recent *stable* version of jamovi](https://www.jamovi.org/download.html).
+
+In most cases, the differences in jamovi versions is very minor.
+However,
+we do discuss stacked bar charts in this book even though these do not appear in
+the jamovi version on USC computer labs.
+
+
+### SPSS {-}
+
+For **Semester 1 2021** at USC,
+the SPSS version installed in computer labs and available using
+[*USC Anywhere*](https://anywhere.usc.edu.au/vpn/index.html) is SPSS version 27.
+
+
+
+
+
+
+## Learning Outcomes {-}
+
+	
+In this book,
+you will learn to:
+
+* Use jamovi to conduct chi-square tests.
+* Use jamovi to conduct two-sample $t$-tests.
+* Use jamovi to create graphs.
+* Use SPSS to conduct chi-square tests.
+* Use SPSS to conduct two-sample $t$-tests.
+* Use SPSS to create graphs.
+
+
+
+
+
+
+
+## How to cite this book {-}
+
+Peter K. Dunn (2019). *Scientific Research Methods: Software manual*.
+https://bookdown.org/pkaldunn/SRM-software/

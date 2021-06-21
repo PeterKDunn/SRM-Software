@@ -1,0 +1,145 @@
+# Using jamovi for inference about the difference between two means {#jamovi:TwoSampleT}
+
+
+```{block2, type="rmdobjectives"}
+**Topics** covered in this tutorial:
+
+* Learn how to use jamovi for conducting two-sample $t$-tests
+
+```
+
+
+
+## Introduction {#jamoviLeanAngle}
+
+Two independent sample $t$-tests are used to compare the means of two separate groups.
+
+Consider the face-plant data [@data:Wojcik:ForwardFall]
+[used in the textbook](https://srm-course.netlify.app/faceplantci)
+(Table \@ref(tab:jamoviFacePlant)).
+
+
+```{r jamoviFacePlant, echo=FALSE}
+FacePlant <- cbind( 
+  c(29, 32, 34, 31, 33),
+  c(34, 27, 32, 28, 27),
+  c(18, 15, 23, 13, 12) 
+)
+
+if( knitr::is_latex_output() ) {
+  kable( FacePlant,
+         format="latex",
+         longtable=FALSE,
+       booktabs = TRUE,
+       align=c("c", "c", "c"),
+       #col.names=rep("", 3),
+      caption = "Lean-forward angles for older and younger women") %>%
+    add_header_above(header=c("Younger women "=2, "Older women "=1), bold=TRUE, align="c") %>%
+    kable_styling(font_size=10)
+    
+}
+if( knitr::is_html_output() ) {
+  kable( FacePlant,
+         format="html",
+         longtable=FALSE,
+       booktabs = TRUE,
+       align=c("c", "c", "c"),
+       col.names=rep("", 3),
+      caption = "Lean-forward angles for older and younger women") %>%
+   kable_styling(full_width=FALSE) %>%
+    add_header_above(header=c("Younger women "=2, "Older women "=1), bold=TRUE, align="c")
+}
+```
+
+
+
+## Data entry {#jamovi:TwoSample:DataEntry}
+
+In the **Data** area,
+each row represents a unit of analysis (in this case,  a person),
+as is usual in jamovi
+(Fig. \@ref(fig:jamoviTwotFacePlantData)).
+	
+Each unit of analysis gets two variables recorded:
+one is quantitative (**Lean angle (in degrees)**), and one is qualitative (**Age group**).
+So there are two columns in the data,
+one for each variable.
+
+The order of the variables doesn't matter,
+but here the quantitative variable is listed first (the lean-forward angle),
+and then the qualitative variable (the age group).
+	
+
+The variables need to be properly set up
+(by double-clicking on the variable names);
+see
+Figs. \@ref(fig:jamoviTwotFacePlantvarsAngle) and \@ref(fig:jamoviTwotFacePlantAgegroup).
+	
+
+```{r jamoviTwotFacePlantData, echo=FALSE, fig.cap="The data entered in jamovi", fig.align="center", out.width="30%"}
+knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-Data.png" )
+```
+
+
+
+```{r jamoviTwotFacePlantvarsAngle, echo=FALSE, fig.cap="Describing the quantitative variable", fig.align="center", out.width="70%"}
+knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-vars-Angle.png" )
+```
+
+
+
+```{r jamoviTwotFacePlantAgegroup, echo=FALSE, fig.cap="Describing the qualitative variable", fig.align="center", out.width="70%"}
+knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-vars-Agegroup.png" )
+```
+
+
+
+The two age groups are defined so that a **1** represents younger women,
+and a **2** represents older women.
+In the jamovi worksheet,
+the values **1** and **2** were entered,
+but jamovi shows what these mean in the worksheet
+when these values are defined.
+
+
+
+## Analysis {#jamovi:TwoSample:Analysis}
+
+1. **Use the jamovi menu**: select
+**Analyses:**
+**T-Tests:**
+**Independent Samples T-Test**
+
+2. **Select the Variables**.
+   In **Dependent  Variables**, add the quantitative variable (here, **LeanAngle**),
+   and the **Grouping Variable** is the qualitative variable (here, **Group**).
+		
+3. Then select the options:
+   **Descriptives** (the numerical summary of each group),
+   **Descriptives plot** (the error bar plot),
+   **Mean difference**
+   and
+   **Confidence interval**.
+   It is best to also keep the hypotheses as the two-tailed (first) option.
+
+
+
+```{r jamoviTwotFacePlant-TTest, echo=FALSE, fig.cap="Enter the variables", fig.align="center", out.width="70%"}
+knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-TTest.png" )
+```
+
+
+4. You will have your output in the jamovi Output window.
+
+
+
+## Numerical summaries {#jamovi:TwoSample:NumericalSummaries}
+
+The *mean*, *median*, *standard deviation* and *standard error* of each group
+are produced as part of the output
+from the $t$-test analysis step above.
+
+The *mean* and *standard error* for the *difference*
+is obtained from the $t$-test output too.
+
+

@@ -1,0 +1,30 @@
+\mainmatter
+
+# Introduction
+
+
+
+
+**Before** you start to use jamovi or SPSS,
+you need to know *why* you need the software.
+
+* If you have **two qualitative variables**,
+  you probably need:
+
+    - A **chi-square test** to analyse the data;
+	 	  and
+		- A side-by-side barchart	
+		  to display the data graphically.
+		  (At the time these notes were prepared,
+		  jamovi does not produce stacked barcharts; SPSS does.)
+
+* If you have **a quantitative variable to compare across two groups**,
+	you probably need:
+
+    - A **two-sample $t$-test** to analyze the data;
+		  and
+    - An error bar chart (and perhaps a boxplot)
+  		to display the data graphically.
+
+
+
