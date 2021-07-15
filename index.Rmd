@@ -1,5 +1,5 @@
 ---
-title: "Scientific Research and Methodology: Software"
+title: "Science Research Methods: Software"
 subtitle:  "An introduction to quantitative research and statistics in science and health: Using software"
 author: "Peter K. Dunn"
 geometry: margin=27mm
