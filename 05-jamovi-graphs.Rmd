@@ -13,52 +13,7 @@ Graphs in jamovi are sometimes produced as part of the **Analyses**,
 and sometimes through the **Exploration** menu.
 	
 
-## Side-by-side bar charts {#jamovi:SideBySide}
-
-	
-### Using older version of jamovi (on USC computer labs)
-
-For this section,
-the data introduced in Sect. \@ref(B12Data) are used.
-
-1. **Use the jamvoi menu:**
-   select
-   **Analyses: Exploration: Descriptives**
-
-2. **Add the variables**.
-   Add the first division of the side-by-side bar chart (in this case, **Diet**) to the **Variables** area;
-   then add the second qualitative variable to the 
-   **Split by** area.
-
-3. Click on the right-pointing arrow next to **Plots**,
-   and select the option **Bar plot**.
-   (You may like to also select the **Frequency tables** option too.) 
-
-
-```{r jamoviTwotFacePlant-Barplot, echo=FALSE, fig.cap="Adding the variables to create a stacked bar chart", fig.align="center", out.width="50%"}
-knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot.png" )
-```
-
-
-
-
-4. You will have your graph in the Output window.
-
-### Using newer version of jamovi
-
-There is an alternative way to produce side-by-side bar charts in more recent (stable) versions of jamovi produce stacked bar charts.
-This method is more flexible.
-This version of jamovi is not currently installed on USC computers.
-
-The most recent (stable) versions of jamovi, 
-available from https://www.jamovi.org/.
-
-
-```{block2, type="rmdtip"}
-The instructions below only work with jamovi versions greater than 1.6.14 (09 February 2021).
-```
-
-
+## Bar charts (side-by-side; stacked) {#jamoviSideBySide}
 
 For this section,
 the data introduced in Sect. \@ref(B12Data) are used.
@@ -72,14 +27,19 @@ the data introduced in Sect. \@ref(B12Data) are used.
 
 3. Click on the right-pointing arrow next to the **Plots** option from the bottom of the left-side screen.
 
-4. Select **Plots** and `Bar Plot`; then select **Bar Type** and the `Side by side` option.
+4. Select **Plots** and `Bar Plot`; then select **Bar Type**. You can select either a `Side by side` bar chart, or a `Stacked` bar chart.
 
-```{r jamoviTwotFacePlant-Stacked-Barplot-new, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in newer version of jamovi", fig.align="center", out.width="50%"}
+```{r jamoviTwotFacePlant-Stacked-Barplot-new, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in jamovi", fig.align="center", out.width="50%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot-Sidebyside.png" )
 ```
 
 5. You can change the vertical (or **Y**) axis to represent either counts or percentages by your selection under **Y-Axis**.
-6. You can change which variables is on the horizontal (or **X**) axis by your selection under **X-Axis**.
+6. You can change which variables is on the horizontal (or **X**) axis by your selection under **X-Axis**. There are plenty of options, so feel free to experiment. A useful one is to select `Percentages within rows`.
+
+```{r jamoviTwotFacePlant-Stacked-Barplot-options, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in jamovi", fig.align="center", out.width="50%"}
+knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot-Options.png" )
+```
+
 6. You will have your graph in the Output window.
 
 
@@ -92,53 +52,7 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot-Sidebyside.png" )
 
 
 
-## Stacked bar charts {#jamovi:Stacked}
-
-At present,
-only the most current (stable) versions of jamovi produce stacked bar charts.
-In particular,
-the version of jamovi currently installed on USC computers does **not** produce stacked bar charts.
-
-The most recent (stable) versions of jamovi, 
-available from https://www.jamovi.org/,
-**do** produce stacked bar charts.
-We explain how to create these below.
-
-
-```{block2, type="rmdtip"}
-The instructions below only work with jamovi versions greater than 1.6.14 (09 February 2021).
-```
-
-
-
-For this section,
-the data introduced in Sect. \@ref(B12Data) are used.
-
-1. **Use the jamvoi menu:**
-   select
-   **Analyses: Frequencies: Independent samples ($\chi^2$ test of association)**.
-
-2. **Add the variables**.
-   Add the variables to the rows and columns (in this case, the `Rows` is **Diet** and the `Columns` is **B12**).
-
-3. Click on the right-pointing arrow next to the **Plots** option from the bottom of the left-side screen.
-
-4. Select **Plots** and `Bar Plot`; then select **Bar Type** and the `Stacked` option.
-
-```{r jamoviTwotFacePlant-Stacked-Barplot, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in newer version of jamovi", fig.align="center", out.width="50%"}
-knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot-Stacked.png" )
-```
-
-5. You can change the vertical (or **Y**) axis to represent either counts or percentages by your selection under **Y-Axis**.
-6. You can change which variables is on the horizontal (or **X**) axis by your selection under **X-Axis**.
-6. You will have your graph in the Output window.
-
-
-
-
-
-
-## Boxplots {#jamovi:Boxplot}
+## Boxplots {#jamoviBoxplot}
 
 
 For this section, the data introduced in Sect. \@ref(jamoviLeanAngle) are used.
@@ -176,19 +90,19 @@ knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-Boxplot.png" )
 
 
 
-## Error bar charts {#jamovi:Errorbar}
+## Error bar charts {#jamoviErrorbar}
 
 Error bar charts are produced as part of the *analysis*:
-see Chap. \@ref(jamovi:TwoSampleT).
+see Chap. \@ref(jamoviTwoSampleT).
 
 
 
 
-## Editing graphs {#jamovi:EditGraphs}
+## Editing graphs {#jamoviEditGraphs}
 
 At the time these notes were prepared,
 *jamovi does not allow graphs to be edited*
-(but it is promised to be coming soon).
+(but it is promised to be coming soon!).
 
 
 

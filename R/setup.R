@@ -4,7 +4,7 @@ library("knitr")
 library("DT")          # For displaying tables
 library("webshot")     # screen shot of HTML animations
 library("GLMsData")    # For some data sets
-library("webex") # For inline exercises
+library("webexercises") # For inline exercises
 library("gifski") # Trying for animations: https://bookdown.org/yihui/rmarkdown-cookbook/animation.html
 
 

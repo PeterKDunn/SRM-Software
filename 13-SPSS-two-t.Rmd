@@ -1,4 +1,4 @@
-# Using SPSS for inference about the difference between two means {#SPSS:TwoSampleT}
+# Using SPSS for inference about the difference between two means {#SPSSTwoSampleT}
 
 
 ```{block2, type="rmdobjectives"}
@@ -57,7 +57,7 @@ if( knitr::is_html_output() ) {
 
 
 
-## Data entry {#SPSSTwoSampleAnalysis:DataEntry}
+## Data entry {#SPSSTwoSampleAnalysisDataEntry}
 
 In the **Data View**,
 each row represents a unit of analysis (in this case,  a person),
@@ -143,7 +143,7 @@ knitr::include_graphics( "SPSSImages/FacePlant-Groups.png" )
 
 
 
-## Numerical summaries {#SPSSTwoSampleAnalysis:NumericalSummaries}
+## Numerical summaries {#SPSSTwoSampleAnalysisNumericalSummaries}
 
 The *mean*, *median*, *standard deviation* and *standard error* are produced as part of the output
 from the $t$-test analysis step above.

@@ -158,7 +158,7 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-Analysis-Ticks.png" )
 
 
 
-## Numerical summaries {#SPSSChiSquare:NumericalSummaries}
+## Numerical summaries {#SPSSChiSquareNumericalSummaries}
 
 **Percentages** can be obtained from **Analyze: Descriptive Statistics: Crosstabs...**
 In the window that appears, select **Cells...** 

@@ -1,4 +1,4 @@
-# Using jamovi for inference about the difference between two means {#jamovi:TwoSampleT}
+# Using jamovi for inference about the difference between two means {#jamoviTwoSampleT}
 
 
 ```{block2, type="rmdobjectives"}
@@ -17,6 +17,11 @@ Two independent sample $t$-tests are used to compare the means of two separate g
 Consider the face-plant data [@data:Wojcik:ForwardFall]
 [used in the textbook](https://srm-course.netlify.app/faceplantci)
 (Table \@ref(tab:jamoviFacePlant)).
+
+**This data set is available from the textbook as `Face-plant data`** in 
+[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+You can download the data and follow along if you wish.
+
 
 
 ```{r jamoviFacePlant, echo=FALSE}
@@ -53,12 +58,13 @@ if( knitr::is_html_output() ) {
 
 
 
-## Data entry {#jamovi:TwoSample:DataEntry}
+## Data entry {#jamoviTwoSampleDataEntry}
 
 In the **Data** area,
 each row represents a unit of analysis (in this case,  a person),
 as is usual in jamovi
 (Fig. \@ref(fig:jamoviTwotFacePlantData)).
+
 	
 Each unit of analysis gets two variables recorded:
 one is quantitative (**Lean angle (in degrees)**), and one is qualitative (**Age group**).
@@ -103,7 +109,13 @@ when these values are defined.
 
 
 
-## Analysis {#jamovi:TwoSample:Analysis}
+## Analysis {#jamoviTwoSampleAnalysis}
+
+
+
+Remember, **this data set is available from the textbook as `Face-plant data`** in 
+[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+You can download the data and follow along if you wish.
 
 1. **Use the jamovi menu**: select
 **Analyses:**
@@ -133,7 +145,7 @@ knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-TTest.png" )
 
 
 
-## Numerical summaries {#jamovi:TwoSample:NumericalSummaries}
+## Numerical summaries {#jamoviTwoSampleNumericalSummaries}
 
 The *mean*, *median*, *standard deviation* and *standard error* of each group
 are produced as part of the output

@@ -66,7 +66,7 @@ This book has been prepared for use with the book
 `r if (knitr::is_latex_output()) {
    'Scientific Research and Methodology,'
 } else {
-   '[Scientific Research and Methodology](https://bookdown.org/pkaldunn/Book/),'
+   '[Scientific Research and Methodology](https://bookdown.org/pkaldunn/SRM-Textbook/),'
 }`
 which is an introduction to quantitative research methods in the scientific, engineering and health disciplines.
 
@@ -175,30 +175,20 @@ and some emerge because Excel is being used for purposes it is not really design
 
 ### jamovi {-}
 
-For **Semester 1 2021** at USC,
-the jamovi version installed in computer labs is
-jamovi v1.2.27.
-
-Since then,
-new versions of jamovi have been released.
-One significant improvement in recent versions that is relevant for this course 
-is the addition of making
-[stacked bar charts](https://bookdown.org/pkaldunn/Book/two-qualitative-variables.html#StackedBarCharts)
-(since version 1.6.14, released 09 February 2021).
+The version of jamovi used for these notes is version v2.2.5.
+This may not be the same as the version on USC computers,
+though any differences will be minor.
 
 We **strongly recommend** installing the 
-[most recent *stable* version of jamovi](https://www.jamovi.org/download.html).
+[most recent **stable** version of jamovi](https://www.jamovi.org/download.html).
 
-In most cases, the differences in jamovi versions is very minor.
-However,
-we do discuss stacked bar charts in this book even though these do not appear in
-the jamovi version on USC computer labs.
+
 
 
 ### SPSS {-}
 
-For **Semester 1 2021** at USC,
-the SPSS version installed in computer labs and available using
+At USC,
+the current SPSS version installed in computer labs and available using
 [*USC Anywhere*](https://anywhere.usc.edu.au/vpn/index.html) is SPSS version 27.
 
 

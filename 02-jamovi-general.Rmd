@@ -49,7 +49,7 @@ here are some **general tips**:
 knitr::include_graphics( "jamoviImages/jamovi-Vars2.png" )
 ```
    
-```{r jamoviVariablesSet, echo=FALSE, fig.cap="The information to fill in for each variable", fig.align="center", out.width="70%"}
+```{r jamoviVariablesSet, echo=FALSE, fig.cap="The information to fill in for each variable", fig.align="center", out.width="80%"}
 knitr::include_graphics( "jamoviImages/jamovi-VarSet.png" )
 ```
    

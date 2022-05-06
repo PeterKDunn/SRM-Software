@@ -194,7 +194,7 @@ knitr::include_graphics( "SPSSImages/Graphics-Boxplot-VarsEntered.png" )
 
 
 
-## Error bar charts {#SPSS:Errorbar}
+## Error bar charts {#SPSSErrorbar}
 
 
 For this section, the data introduced in Sect. \@ref(SPSSLeanAngle) are used.

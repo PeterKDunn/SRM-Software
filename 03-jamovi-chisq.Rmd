@@ -1,4 +1,4 @@
-# Using jamovi for inference about ORs  {#jamovi:Chisquare}
+# Using jamovi for inference about ORs  {#jamoviChisquare}
 
 
 
@@ -19,6 +19,12 @@ This type of data can be compiled into a two-way table of counts.
 Consider data [@data:Gammon2012:B12]
 [used in the textbook](https://srm-course.netlify.app/b12deficiencyci)
 (Table \@ref(tab:jamoviB12Data)).
+
+
+**This data set is available from the textbook as `B12`** in 
+[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+You can download the data and follow along if you wish.
+
 
 There are *two variables* being measured on each individual:
 
@@ -77,7 +83,7 @@ if( knitr::is_html_output() ) {
 
 
 
-## Data entry {#jamovi:ChiSquare:DataEntry}
+## Data entry {#jamoviChiSquareDataEntry}
 
 In jamovi,
 we will have two columns:
@@ -99,10 +105,6 @@ the data would be entered as shown in
 Fig. \@ref(fig:jamoviChisqB12DataLong);
 there would be 124 rows, but we only show some of these rows to save space.
 
-This data set is available from the textbook in 
-[Appendix&nbsp;A](https://bookdown.org/pkaldunn/Book/AppendixDataSets.html)
-
-
 ```{block2, type="rmdimportant"}
 Each *row* in the jamovi data represents one *unit of analysis*.
 
@@ -116,14 +118,19 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Data-Long.png" )
 
 ```{block2, type="rmdimportant"}
 **Note that I entered 1 and 2 into the jamovi worksheet**:
-jamovi just *shows* what these mean in the worksheet because I have told jamovi what the `1` and the `2` mean.
+jamovi just *shows* what these mean in the worksheet, because I have told jamovi what the `1` and the `2` mean.
 ```
 
 
 Your data is now set up and ready to use.
 
 
-## Analysis {#jamovi:ChiSquare:Analysis}
+## Analysis {#jamoviChiSquareAnalysis}
+
+
+Remember that **this data set is available from the textbook as `B12`** in 
+[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html)
+
 
 Once the data are entered,
 we can begin analysis:
@@ -170,7 +177,7 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis-Stats-Ticks.png" )
 
 
 
-## Numerical summaries {#jamovi:ChiSquare:NumericalSummaries}
+## Numerical summaries {#jamoviChiSquareNumericalSummaries}
 
 *Percentages* can be obtained from the same place: 
 **Analyses: Frequencies Independent samples ($\chi^2$ test of association)**.
