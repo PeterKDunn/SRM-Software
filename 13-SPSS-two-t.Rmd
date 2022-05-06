@@ -53,6 +53,11 @@ if( knitr::is_html_output() ) {
 ```
 
 
+```{block2, type="rmddatafile"}
+The data file (`forwardfall.sav`) can be downloaded in Sect. \@ref(DataFiles).
+
+You can download the data, and follow the instructions.
+```
 
 
 

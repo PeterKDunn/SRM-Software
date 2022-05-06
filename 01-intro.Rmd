@@ -2,7 +2,7 @@
 
 # Introduction
 
-
+## Knowing the analysis to use
 
 
 **Before** you start to use jamovi or SPSS,
@@ -27,4 +27,11 @@ you need to know *why* you need the software.
   		to display the data graphically.
 
 
+
+## Data files
+
+
+The data files used in this document are available in Sect. \@ref(DataFiles).
+
+You can download the data, and follow the instructions in this document.
 

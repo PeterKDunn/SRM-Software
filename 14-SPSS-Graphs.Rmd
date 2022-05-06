@@ -11,6 +11,15 @@
 	
 
 
+
+```{block2, type="rmddatafile"}
+The data files used in this section can be downloaded in Sect. \@ref(DataFiles).
+
+You can download the data, and follow the instructions.
+```
+
+
+
 Graphs in SPSS are generally produced using the **Graphs** menu,
 and then selecting **Chart Builder...**
 	

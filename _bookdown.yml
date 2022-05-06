@@ -17,7 +17,8 @@ rmd_files: [
 "12-SPSS-chisq.Rmd",
 "13-SPSS-two-t.Rmd",
 "14-SPSS-graphs.Rmd",
-"15-References.Rmd"
+"15-DataFiles.Rmd",
+"16-References.Rmd"
 ]
 language:
   label:

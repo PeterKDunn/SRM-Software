@@ -39,7 +39,7 @@ knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackag
 <!-- # render_book("index.Rmd"); render_book("index.Rmd", "bookdown::pdf_book") -->
 
 <!--  TO PUBLISH ON BOOKDOWN:  -->
-<!-- publish_book(name="SRM-software") -->
+<!-- bookdown::publish_book(name="SRM-software") -->
 
 
 
@@ -128,6 +128,12 @@ These chunks offer helpful information.
 These chunks highlight common mistakes or warnings, about a particular concept or about using a formula.
 ```
 
+
+
+
+```{block2, type="rmddatafile"}
+These chunks point to the data files being used, collated in Sect. \@ref(DataFiles), so you can download the data, and follow the instructions.
+```
 
 
 

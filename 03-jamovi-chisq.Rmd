@@ -21,6 +21,13 @@ Consider data [@data:Gammon2012:B12]
 (Table \@ref(tab:jamoviB12Data)).
 
 
+```{block2, type="rmddatafile"}
+The data file (`B12-Long.csv`) can be downloaded in Sect. \@ref(DataFiles).
+
+You can download the data, and follow the instructions.
+```
+
+
 **This data set is available from the textbook as `B12`** in 
 [Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
 You can download the data and follow along if you wish.

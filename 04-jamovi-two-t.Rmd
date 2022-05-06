@@ -18,10 +18,13 @@ Consider the face-plant data [@data:Wojcik:ForwardFall]
 [used in the textbook](https://srm-course.netlify.app/faceplantci)
 (Table \@ref(tab:jamoviFacePlant)).
 
-**This data set is available from the textbook as `Face-plant data`** in 
-[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
-You can download the data and follow along if you wish.
 
+
+```{block2, type="rmddatafile"}
+The data file (`forwardfall.csv`) can be downloaded in Sect. \@ref(DataFiles).
+
+You can download the data, and follow the instructions.
+```
 
 
 ```{r jamoviFacePlant, echo=FALSE}

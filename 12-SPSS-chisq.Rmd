@@ -1,4 +1,4 @@
-# Using SPSS for inference about ORs
+# Using SPSS for inference about ORs {#SPSSOR}
 
 ```{block2, type="rmdobjectives"}
 **Topics** covered in this tutorial:
@@ -27,6 +27,11 @@ Note there are *two variables* being measured on each individual:
 So SPSS will have *two columns*: 
 One for each variable.
 
+```{block2, type="rmddatafile"}
+The data file (`B12-Long.sav`) can be downloaded in Sect. \@ref(DataFiles).
+
+You can download the data, and follow the instructions.
+```
 
 
 ```{r SPSSB12Data,  echo=FALSE}
