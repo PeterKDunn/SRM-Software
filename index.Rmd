@@ -1,6 +1,6 @@
 ---
 title: "Science Research Methods: Software"
-subtitle:  "An introduction to quantitative research and statistics in science and health: Using software"
+subtitle:  "An introduction to quantitative research and statistics: Using software"
 author: "Peter K. Dunn"
 geometry: margin=27mm
 description: "Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)"
