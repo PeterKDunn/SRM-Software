@@ -1,10 +1,10 @@
-# Using jamovi for inference about the difference between two means {#jamoviTwoSampleT}
+# jamovi: inference about the difference between two means {#jamoviTwoSampleT}
 
 
 ```{block2, type="rmdobjectives"}
 **Topics** covered in this tutorial:
-
-* Learn how to use jamovi for conducting two-sample $t$-tests
+  
+* Learn how to use jamovi for comparing two means.
 
 ```
 
@@ -14,9 +14,7 @@
 
 Two independent sample $t$-tests are used to compare the means of two separate groups.
 
-Consider the face-plant data [@data:Wojcik:ForwardFall]
-[used in the textbook](https://srm-course.netlify.app/faceplantci)
-(Table \@ref(tab:jamoviFacePlant)).
+Consider the face-plant data [@data:Wojcik:ForwardFall] [used in Exercise\ 30.11 of the textbook](https://bookdown.org/pkaldunn/SRM-Textbook/AnalysisTwoMeans.html) (Table\ \@ref(tab:jamoviFacePlant)).
 
 
 
@@ -36,26 +34,32 @@ FacePlant <- cbind(
 
 if( knitr::is_latex_output() ) {
   kable( FacePlant,
-         format="latex",
-         longtable=FALSE,
-       booktabs = TRUE,
-       align=c("c", "c", "c"),
-       #col.names=rep("", 3),
-      caption = "Lean-forward angles for older and younger women") %>%
-    add_header_above(header=c("Younger women "=2, "Older women "=1), bold=TRUE, align="c") %>%
-    kable_styling(font_size=10)
-    
+         format = "latex",
+         longtable = FALSE,
+         booktabs = TRUE,
+         align = c("c", "c", "c"),
+         #col.names=rep("", 3),
+         caption = "Lean-forward angles for older and younger women") %>%
+    add_header_above(header = c("Younger women " = 2, 
+                                "Older women " = 1), 
+                     bold = TRUE, 
+                     align = "c") %>%
+    kable_styling(font_size = 10)
+  
 }
 if( knitr::is_html_output() ) {
   kable( FacePlant,
-         format="html",
-         longtable=FALSE,
-       booktabs = TRUE,
-       align=c("c", "c", "c"),
-       col.names=rep("", 3),
-      caption = "Lean-forward angles for older and younger women") %>%
-   kable_styling(full_width=FALSE) %>%
-    add_header_above(header=c("Younger women "=2, "Older women "=1), bold=TRUE, align="c")
+         format = "html",
+         longtable =FALSE,
+         booktabs = TRUE,
+         align = c("c", "c", "c"),
+         col.names = rep("", 3),
+         caption = "Lean-forward angles for older and younger women") %>%
+    kable_styling(full_width = FALSE) %>%
+    add_header_above(header = c("Younger women " = 2, 
+                                "Older women " = 1), 
+                     bold = TRUE, 
+                     align = "c")
 }
 ```
 
@@ -63,27 +67,17 @@ if( knitr::is_html_output() ) {
 
 ## Data entry {#jamoviTwoSampleDataEntry}
 
-In the **Data** area,
-each row represents a unit of analysis (in this case,  a person),
-as is usual in jamovi
-(Fig. \@ref(fig:jamoviTwotFacePlantData)).
+In the **Data** area, each row represents a unit of analysis (in this case, a person), as is usual in jamovi (Fig.\ \@ref(fig:jamoviTwotFacePlantData)).
 
-	
-Each unit of analysis gets two variables recorded:
-one is quantitative (**Lean angle (in degrees)**), and one is qualitative (**Age group**).
-So there are two columns in the data,
-one for each variable.
 
-The order of the variables doesn't matter,
-but here the quantitative variable is listed first (the lean-forward angle),
-and then the qualitative variable (the age group).
-	
+Each unit of analysis gets two variables recorded: one is quantitative (**Lean angle (in degrees)**), and one is qualitative (**Age group**).
+So there are two columns in the data, one for each variable.
 
-The variables need to be properly set up
-(by double-clicking on the variable names);
-see
-Figs. \@ref(fig:jamoviTwotFacePlantvarsAngle) and \@ref(fig:jamoviTwotFacePlantAgegroup).
-	
+The order of the variables doesn't matter, but here the quantitative variable is listed first (the lean-forward angle), and then the qualitative variable (the age group).
+
+
+The variables need to be properly set up (by double-clicking on the variable names); see Figs.\ \@ref(fig:jamoviTwotFacePlantvarsAngle) and \@ref(fig:jamoviTwotFacePlantAgegroup).
+
 
 ```{r jamoviTwotFacePlantData, echo=FALSE, fig.cap="The data entered in jamovi", fig.align="center", out.width="30%"}
 knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-Data.png" )
@@ -103,12 +97,8 @@ knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-vars-Agegroup.png" )
 
 
 
-The two age groups are defined so that a **1** represents younger women,
-and a **2** represents older women.
-In the jamovi worksheet,
-the values **1** and **2** were entered,
-but jamovi shows what these mean in the worksheet
-when these values are defined.
+The two age groups are defined so that a `1` represents younger women, and a `2` represents older women.
+In the jamovi worksheet, the values `1` and `2` were entered, but jamovi shows what these mean in the worksheet when these values are defined.
 
 
 
@@ -116,26 +106,27 @@ when these values are defined.
 
 
 
-Remember, **this data set is available from the textbook as `Face-plant data`** in 
-[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+Remember, **this data set is available from the textbook as `forwardfall.csv`** in [Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
 You can download the data and follow along if you wish.
 
-1. **Use the jamovi menu**: select
-**Analyses:**
-**T-Tests:**
-**Independent Samples T-Test**
-
+1. **Use the jamovi menu**: select **Analyses> T-Tests> Independent Samples T-Test**
 2. **Select the Variables**.
-   In **Dependent  Variables**, add the quantitative variable (here, **LeanAngle**),
-   and the **Grouping Variable** is the qualitative variable (here, **Group**).
-		
+   - For the **Dependent  Variables**, add the quantitative variable (here, `LeanAngle`).
+   - For the **Grouping Variable**, add the qualitative variable (here, `Group`).
+
 3. Then select the options:
-   **Descriptives** (the numerical summary of each group),
-   **Descriptives plot** (the error bar plot),
-   **Mean difference**
-   and
-   **Confidence interval**.
-   It is best to also keep the hypotheses as the two-tailed (first) option.
+  - `Student's` and `Welch's` should be select to perform the hypothesis test and compute the CIs.
+  - `Mean difference` to show the difference between the two means in the output.
+  - `Confidence interval` to show the CI for the difference between the two means.
+  - `Descriptives` to show the numerical summary of each group.
+  - `Descriptives plot` to show the error bar chart.
+  
+  
+```{block2, type="rmdimportant"}
+Even if you have a one-tailed hypothesis, keep the hypotheses as the two-tailed (first) option, or you will get some strange output.
+The one-tailed $P$-value will be half the two-tailed $P$-value.
+```
+
 
 
 

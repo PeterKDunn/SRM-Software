@@ -1,11 +1,11 @@
-# Graphs in SPSS {#SPSSGraphs}
+# SPSS: graphs {#SPSSGraphs}
 
 
 
 ```{block2, type="rmdobjectives"}
 **Topics** covered in this tutorial:
 
-* Creating graphs in SPSS
+* Creating graphs in SPSS.
 
 ```	
 	
@@ -20,16 +20,11 @@ You can download the data, and follow the instructions.
 
 
 
-Graphs in SPSS are generally produced using the **Graphs** menu,
-and then selecting **Chart Builder...**
+Graphs in SPSS are generally produced using the **Graphs** menu, and then selecting **Chart Builder...**
 	
-After making this selection, you usually get a warning
-(Fig. \@ref(fig:SPSSGraphWarning))).
-It is reminding you that it is **really important** that your have declared 
-the **Measure** correctly for each variable
-in the **Variable View**
-(that is, correctly declared each variable as **Nominal**, **Ordinal** or **Scale**);
-see Sect. \@ref(SPSSGeneral).
+After making this selection, you usually get a warning (Fig.\ \@ref(fig:SPSSGraphWarning))).
+It is reminding you that it is **really important** that your have declared  the **Measure** correctly for each variable
+in the **Variable View** (that is, correctly declared each variable as **Nominal**, **Ordinal** or **Scale**); see Sect.\ \@ref(SPSSGeneral).
 
 Provided you have done so, you can press **OK**.
 
@@ -43,13 +38,12 @@ knitr::include_graphics( "SPSSImages/Graphics-Warning.png" )
 
 
 ```{block2, type="rmdimportant"}
-The graphs produced by default in SPSS are usually an inconvenient size for copying-and-pasting
-into Word, PowewrPoint, and other places.
+The graphs produced by default in SPSS are usually an inconvenient size for copying-and-pasting into Word, PowewrPoint, and other places.
 We now explain the easy solution.
 ```
 
-When graphs are created in SPSS using the **Chart Builder**,
-the window shown in Fig. \@ref(fig:SPSSChartBuilder) initially appears.
+
+When graphs are created in SPSS using the **Chart Builder**, the window shown in Fig.\ \@ref(fig:SPSSChartBuilder) initially appears.
 Select the **Options** item from the right-hand side of this window.
 
 
@@ -57,12 +51,9 @@ Select the **Options** item from the right-hand side of this window.
 knitr::include_graphics( "SPSSImages/ChartBuilder.png" )
 ```
 
-Then, 
-change the **Chart size** to (say) 60% or a similar value
-(Fig. \@ref(fig:SPSSChartBuilderOptions)).
-Now,
-when you copy-and-paste the graph,
-the sizing will be more appropriate.
+Then, change the **Chart size** to (say) 60% or a similar value (Fig.\ \@ref(fig:SPSSChartBuilderOptions)).
+Now, when you copy-and-paste the graph, the sizing will be more appropriate.
+
 
 ```{r SPSSChartBuilderOptions, echo=FALSE, fig.cap="The warning after selecting Graphs", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/ChartBuilder-Options-Size.png" )
@@ -73,16 +64,12 @@ knitr::include_graphics( "SPSSImages/ChartBuilder-Options-Size.png" )
 
 ## Side-by-side bar charts {#SPSSSideBySide}
 
-For this section,
-the data introduced in Sect. \@ref(SPSSB12Data) are used.
+For this section, the data introduced in Sect. \@ref(SPSSB12Data) are used.
 
-1. **Use the SPSS menu:** select
-   **Graphs: Chart Builder...**
-
+1. **Use the SPSS menu:** select **Graphs> Chart Builder...**
 2. **Select the type of plot**.
-   Select **Bar** from the Gallery,
-   then select the **second** template from the top row,
-   and drag it to the canvas.
+   Select **Bar** from the Gallery, then select the **second** template from the top row, and drag it to the canvas.
+
 
 ```{r SPSSGraphSbS, echo=FALSE, fig.cap="Selecting a side-by-side bar chart", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindow-SbS.png" )
@@ -90,11 +77,10 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindow-SbS.png" )
 
 
 3. **Add the variables**.
-   Drag one qualitative variable to the bottom (left-to-right) axis;
-   this can often be seen as the explanatory variable.
-   Drag the other to the top right (where it says, cryptically, **Cluster on X: set color**);
-   see Fig. \@ref(fig:SPSSGraphSbSAddVars)).
-4. Press **OK**. You will have your graph in the SPSS Output window.
+   Drag one qualitative variable to the bottom (left-to-right) axis; this can often be seen as the explanatory variable.
+   Drag the other to the top right (where it says, cryptically, **Cluster on X: set color**); see Fig.\ \@ref(fig:SPSSGraphSbSAddVars)).
+4. Press **OK**. 
+   You will have your graph in the SPSS Output window.
 
 
 ```{r SPSSGraphSbSAddVars, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart", fig.align="center", out.width="85%"}
@@ -122,28 +108,21 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindows-VarsEntered2.png"
 
 ## Stacked bar charts {#SPSSStacked}
 
-For this section,
-the data introduced in Sect. \@ref(SPSSB12Data) are used.
+For this section, the data introduced in Sect. \@ref(SPSSB12Data) are used.
 
-1. **Use the SPSS menu:** select
-   **Graphs: Chart Builder...**
-
+1. **Use the SPSS menu:** select **Graphs> Chart Builder...**
 2. **Select the type of plot**.
-   Select **Bar**,
-   then select the **third** template from the top row,
-   and drag it to the canvas
-   (Fig. \@ref(fig:SPSSGraphSB)).
+   Select **Bar**, then select the **third** template from the top row, and drag it to the canvas (Fig.\ \@ref(fig:SPSSGraphSB)).
 
 ```{r SPSSGraphSB, echo=FALSE, fig.cap="Selecting a stacked bar chart", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindow-Stacked.png" )
 ```
 
 3. **Add the variables**.
-   Drag one qualitative variable to the bottom (left-to-right) axis;
-   this can often be seen as the explanatory variable.
-   Drag the other to the top right (where it says, cryptically, **Stack: set color**);
-   Fig. \@ref(fig:SPSSGraphSBAddVars).
-4. Press **OK**. You will have your graph in the SPSS Output window.
+   Drag one qualitative variable to the bottom (left-to-right) axis; this can often be seen as the explanatory variable.
+   Drag the other to the top right (where it says, cryptically, **Stack: set color**); Fig.\ \@ref(fig:SPSSGraphSBAddVars).
+4. Press **OK**. 
+   You will have your graph in the SPSS Output window.
 
 
 ```{r SPSSGraphSBAddVars, echo=FALSE, fig.cap="Adding the variables to create a stacked bar chart", fig.align="center", out.width="85%"}
@@ -167,23 +146,18 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-Stacked-VarsEntered.png" )
 For this section, the data introduced in Sect. \@ref(SPSSLeanAngle) are used.
 
 
-1. **Use the SPSS menu:** select
-   **Graphs: Chart Builder...**
+1. **Use the SPSS menu:** select **Graphs> Chart Builder...**
 2. **Select the type of plot**.
-   Select **Boxplot**,
-   then select the **first** template from the top row,
-   and drag it to the canvas
-   (Fig. \@ref(fig:SPSSGraphBoxplotSelect)).
+   Select **Boxplot**, then select the **first** template from the top row, and drag it to the canvas (Fig.\ \@ref(fig:SPSSGraphBoxplotSelect)).
 
 ```{r SPSSGraphBoxplotSelect, echo=FALSE, fig.cap="Selecting a boxplot", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-Boxplot-Drag.png" )
 ```
 
 3. **Add the variables**.
-   Drag the qualitative variable to the bottom (left-to-right) axis;
-   drag the quantitative variable to the vertical (up-and-down) axis
-   (Fig; \@ref(fig:SPSSGraphBoxplotAddVars)).
-4. Press **OK**. You will have your graph in the SPSS Output window.
+   Drag the qualitative variable to the bottom (left-to-right) axis; drag the quantitative variable to the vertical (up-and-down) axis (Fig.\ \@ref(fig:SPSSGraphBoxplotAddVars)).
+4. Press **OK**. 
+   You will have your graph in the SPSS Output window.
 
 ```{r SPSSGraphBoxplotAddVars, echo=FALSE, fig.cap="Adding the variables to create a boxplot", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-Boxplot-VarsEntered.png" )
@@ -208,13 +182,9 @@ knitr::include_graphics( "SPSSImages/Graphics-Boxplot-VarsEntered.png" )
 
 For this section, the data introduced in Sect. \@ref(SPSSLeanAngle) are used.
 
-1. **Use the SPSS menu:** select
-   **Graphs: Chart Builder...**
+1. **Use the SPSS menu:** select **Graphs> Chart Builder...**
 2. **Select the type of plot**.
-   Select **Bar**,
-   then select the **third** template from the **second row**,
-   and drag it to the canvas
-   (Fig. \@ref(fig:SPSSGraphErrorbarSelect)).
+   Select **Bar**, then select the **third** template from the **second row**, and drag it to the canvas (Fig.\ \@ref(fig:SPSSGraphErrorbarSelect)).
 
 ```{r SPSSGraphErrorbarSelect, echo=FALSE, fig.cap="Selecting an error bar chart", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-ErrorBar-Drag.png" )
@@ -222,10 +192,9 @@ knitr::include_graphics( "SPSSImages/Graphics-ErrorBar-Drag.png" )
 
 
 3. **Add the variables**.
-   Drag the qualitative variable to the bottom (left-to-right) axis;
-   drag the quantitative variable to the vertical (up-and-down) axis
-   (Fig. \@ref(fig:SPSSGraphErrorbarAddVars)).
-4. Press **OK**. You will have your graph in the SPSS Output window.
+   Drag the qualitative variable to the bottom (left-to-right) axis; drag the quantitative variable to the vertical (up-and-down) axis (Fig.\ \@ref(fig:SPSSGraphErrorbarAddVars)).
+4. Press **OK**. 
+   You will have your graph in the SPSS Output window.
 
 ```{r SPSSGraphErrorbarAddVars, echo=FALSE, fig.cap="Adding the variables to create an error bar chart", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-Boxplot-VarsEntered.png" )
@@ -243,18 +212,12 @@ knitr::include_graphics( "SPSSImages/Graphics-Boxplot-VarsEntered.png" )
 ## Editing graphs
 
 
-Your graph
-appears in the SPSS Output window.
-Double-clicking on the graph opens
-the **Chart Editor**.
+Your graph appears in the SPSS Output window.
+Double-clicking on the graph opens the **Chart Editor**.
 		
-In the **Chart Editor**,
-you can edit almost any part of the graph,
-by clicking on various elements of the graph (e.g. the axis labels)
-or clicking on the icons at the top of the Chart Editor window.
+In the **Chart Editor**, you can edit almost any part of the graph, by clicking on various elements of the graph (e.g. the axis labels) or clicking on the icons at the top of the Chart Editor window.
 		
-Once you have finished editing your graph in the **Chart Editor**,
-close that window, and the graph will be updated in the SPSS Output Window.
+Once you have finished editing your graph in the **Chart Editor**, close that window, and the graph will be updated in the SPSS Output Window.
 
 
 

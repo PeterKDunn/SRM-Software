@@ -1,53 +1,44 @@
-# Using jamovi for inference about ORs  {#jamoviChisquare}
+# jamovi: inference for two odds or two proportions  {#jamoviChisquare}
 
 
 
 ```{block2, type="rmdobjectives"}
 **Topics** covered in this chapter:
-
-* How to use jamovi for conducting chi-square tests
+  
+* How to use jamovi for comparing two odds (i.e., analysis using odds ratios).
+* How to use jamovi for comparing two proportions.
 
 ```
 
 
 ## Introduction {#B12Data}
 
-$\chi^2$ tests (*ki* as in 'kite') are used to analyse data where each unit of analysis has
-*two qualitative variables* measured (or observed) about it.
-This type of data can be compiled into a two-way table of counts. 
+RQs comparing *two qualitative variables* require count data that can be compiled into a two-way table of counts. 
+Consider data [@data:Gammon2012:B12] [in Exercise\ 31.16 of the textbook](https://bookdown.org/pkaldunn/SRM-Textbook/AnalysisOddsRatio.html) (Table\ \@ref(tab:jamoviB12Data)).
 
-Consider data [@data:Gammon2012:B12]
-[used in the textbook](https://srm-course.netlify.app/b12deficiencyci)
-(Table \@ref(tab:jamoviB12Data)).
 
 
 ```{block2, type="rmddatafile"}
 The data file (`B12-Long.csv`) can be downloaded in Sect. \@ref(DataFiles).
-
 You can download the data, and follow the instructions.
 ```
 
 
-**This data set is available from the textbook as `B12`** in 
-[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+**This data set is available from the textbook as `B12-Long`** in 
+[Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
 You can download the data and follow along if you wish.
 
-
-There are *two variables* being measured on each individual:
+There are *two qualitative variables* being measured on each individual:
 
 1.  Whether the person is vegetarian (or not);
 1.  Whether the person is B12 deficient (or not).
 
-So jamovi will have *two columns*: 
-one for each variable.
-
-
-There are 124 units of analysis,
-so there are *124 rows*.
+Hence, jamovi will have *two columns*: one for each variable.
+There are $124$ units of analysis, so there are *$124$ rows* of data.
 
 
 ```{r jamoviB12Data,  echo=FALSE}
-B12Data <- array( dim=c(3, 3) )
+B12Data <- array( dim = c(3, 3) )
 
 rownames(B12Data) <- c("Vegetarians",
                        "Non-vegetarians",
@@ -59,31 +50,37 @@ colnames(B12Data) <- c("B12 deficient",
 B12Data[1, ] <- c(8, 26, 34)
 B12Data[2, ] <- c(8, 82, 90)
 B12Data[3, ] <- c(16, 108, 124)
-  
+
 if( knitr::is_latex_output() ) {
   kable(B12Data,
-        format="latex",
-      booktabs = TRUE,
-      longtable=FALSE,
-      align=c("r", "r", "r"),
-      caption="The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
-    row_spec(0, bold=TRUE) %>%
-    row_spec(3, bold=TRUE) %>%
-    column_spec(4, bold=TRUE) %>%
+        format = "latex",
+        booktabs = TRUE,
+        longtable = FALSE,
+        align = c("r", "r", "r"),
+        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
+    row_spec(0, 
+             bold = TRUE) %>%
+    row_spec(3, 
+             bold = TRUE) %>%
+    column_spec(4, 
+                bold = TRUE) %>%
     row_spec(2, hline_after = TRUE) %>%
-    kable_styling(font_size=10)
+    kable_styling(font_size = 10)
   
 }
 if( knitr::is_html_output() ) {
   kable(B12Data,
-        format="html",
-      booktabs = TRUE,
-      longtable=FALSE,
-      align=c("r","r", "r"),
-      caption="The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
-    row_spec(0, bold=TRUE) %>%
-    row_spec(3, bold=TRUE) %>%
-    column_spec(4, bold=TRUE)
+        format = "html",
+        booktabs = TRUE,
+        longtable = FALSE,
+        align = c("r","r", "r"),
+        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
+    row_spec(0, 
+             bold = TRUE) %>%
+    row_spec(3, 
+             bold = TRUE) %>%
+    column_spec(4, 
+                bold = TRUE)
 }
 ```
 
@@ -92,25 +89,16 @@ if( knitr::is_html_output() ) {
 
 ## Data entry {#jamoviChiSquareDataEntry}
 
-In jamovi,
-we will have two columns:
+In jamovi, the two columns are set up as follows:
 
-* **Diet**: we can set this up so that 1 means 'Vegetarian' (i.e. in row 1), 
-   and 2 means 'Non-vegetarian' (i.e. in row 2).
-* **B12**: we can set this up so that 1 means 'B12 deficient' (i.e. in column 1),
-  and 2 means '*Not* B12 deficient' (i.e. in column 2).
+* **Diet**: `1` means 'Vegetarian' (i.e. in Row\ 1 of the data table), and `2` means 'Non-vegetarian' (i.e. in Row\ 2 of the data table in Table\ \@ref(tab:jamoviB12Data)).
+* **B12**: `1` means 'B12 deficient' (i.e. in Column\ 1 of the data table), and `2` means '*Not* B12 deficient' (i.e. in Column\ 2 of the data table in Table\ \@ref(tab:jamoviB12Data)); see Fig.\ \@ref(fig:jamoviChisqB12DataLong).
 
-See Fig. \@ref(fig:jamoviChisqB12DataLong).
+The data needs to be set up so that *each row represents one unit of analysis*.
+That means there will be $124$ rows of data: one for each person (unit of analysis).
 
-The data needs to be set up so that
-*each row represents one unit of analysis*.
-That means there will be 124 rows of data: 
-one for each person (unit of analysis).
+In jamovi, the data are entered as shown in Fig.\ \@ref(fig:jamoviChisqB12DataLong); there are $124$\ rows, but we only show some of these rows to save space.
 
-In jamovi,
-the data would be entered as shown in
-Fig. \@ref(fig:jamoviChisqB12DataLong);
-there would be 124 rows, but we only show some of these rows to save space.
 
 ```{block2, type="rmdimportant"}
 Each *row* in the jamovi data represents one *unit of analysis*.
@@ -118,14 +106,15 @@ Each *row* in the jamovi data represents one *unit of analysis*.
 Each *column* in the jamovi data represents one *variable*.
 ```
 
+
 ```{r jamoviChisqB12DataLong, echo=FALSE, fig.cap="The B12 data entered into jamovi", fig.align="center", out.width="80%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Data-Long.png" )
 ```
 
 
 ```{block2, type="rmdimportant"}
-**Note that I entered 1 and 2 into the jamovi worksheet**:
-jamovi just *shows* what these mean in the worksheet, because I have told jamovi what the `1` and the `2` mean.
+**Note that I entered `1` and `2` into the jamovi worksheet**:
+  jamovi just *shows* what these mean in the worksheet, because I have told jamovi what the `1` and the `2` mean.
 ```
 
 
@@ -135,15 +124,12 @@ Your data is now set up and ready to use.
 ## Analysis {#jamoviChiSquareAnalysis}
 
 
-Remember that **this data set is available from the textbook as `B12`** in 
-[Appendix&nbsp;A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html)
+Remember that **this data set is available from the textbook as `B12-Long`** in [Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html)
 
 
-Once the data are entered,
-we can begin analysis:
+Once the data are entered, we can begin analysis:
 
-1. **Use the menu:** select
-   **Analyses: Frequencies: Independent samples ($\chi^2$ test of association)**
+1. **Use the menu:** select **Analyses> Frequencies> Independent samples ($\chi^2$ test of association)**
 
 ```{r jamoviChisqB12Menu, echo=FALSE, fig.cap="Select the correct test", fig.align="center", out.width="60%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Menu2.png" )
@@ -151,11 +137,8 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Menu2.png" )
 
 
 
-2. **Select the variables**,
-   dragging them from the left panel to the
-   **Rows** and **Columns** areas as appropriate.
-   In Table \@ref(tab:jamoviB12Data),
-   **Diet** is in the rows of the table, for example.
+2. **Select the variables:** dragging them from the left panel to the **Rows** and **Columns** areas as appropriate.
+In Table\ \@ref(tab:jamoviB12Data), **Diet** is in the rows of the table, for example.
 
 
 ```{r jamoviChisqB12Analysis, echo=FALSE, fig.cap="Enter the variables", fig.align="center", out.width="50%"}
@@ -163,22 +146,20 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis.png" )
 ```
 
 
+3. **Select the analysis options:** Under the area where you entered the variables, select the right-pointing arrow beside **Statistics**, and then:
 
-
-3. **Select the analysis options.**
-   Under the area where you entered the variables,
-   select the right-pointing arrow beside **Statistics**,
-   and then:
-
-    - Select **$\chi^2$** (to produce information for the hypothesis test);
-    - Select **Confidence intervals** (to produce a CI for the odds ratio).
-
-4. You will have your output in the jamovi Output window on the right.
+- Select `X2`: this conducts the $\chi^2$ hypothesis test for comparing odds.
+- Select `z test for difference in 2 proportions`: this conducts the $z$-test to compare proportions.
+- Select `Odds ratio`: this shows the value of the odds ratio.
+- Select `Difference in proportions`: this shows the difference between the two proportions.
+- Select `Confidence intervals`: this shows the CI for the odds ratio, and for the difference between the proportions.
 
 
 ```{r jamoviChisqB12AnalysisStatsTicks, echo=FALSE, fig.cap="Check the correct options", fig.align="center", out.width="60%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis-Stats-Ticks.png" )
 ```
+
+4. You will have your output in the jamovi Output window on the right.
 
 
 
@@ -186,25 +167,18 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis-Stats-Ticks.png" )
 
 ## Numerical summaries {#jamoviChiSquareNumericalSummaries}
 
-*Percentages* can be obtained from the same place: 
-**Analyses: Frequencies Independent samples ($\chi^2$ test of association)**.
-Under the area where you selected the **Statistics**,
-select the right-pointing arrow beside **Cells**,
-and then:
+*Percentages* can be obtained from the same place: **Analyses> Frequencies Independent samples ($\chi^2$ test of association)**.
+Under the area where you selected the **Statistics**, select the right-pointing arrow beside **Cells**, and then:
 
+* Select `Row` under the **Percentages** section; and/or
+* Select `Column` under the **Percentages** section.
 
 ```{r jamoviChisqB12AnalysisCellsTicks, echo=FALSE, fig.cap="Select what to show in the table", fig.align="center", out.width="60%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis-Cells-Ticks.png" )
 ```
-
-
-
-* Select **Row** under the **Percentages** section; and/or
-* Select **Column** under the **Percentages** section.
 
 Of course, you can select any of the other options too, and see what happens.
 
 
 
 
-	

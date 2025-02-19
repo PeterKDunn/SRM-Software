@@ -5,26 +5,16 @@
 ## Knowing the analysis to use
 
 
-**Before** you start to use jamovi or SPSS,
-you need to know *why* you need the software.
+**Before** you start to use jamovi or SPSS, you need to know *why* you need the software.
 
-* If you have **two qualitative variables**,
-  you probably need:
+* If your RQ concerns the **relationship between two qualitative variables**:
+  - Analysis of **odds ratios** using, for example, a $\chi^2$-test; or
+  - Analysis of **two proportions** using, for example, a $z$-test.
+  - Displays using a side-by-side or stacked barchart.
 
-    - A **chi-square test** to analyse the data;
-	 	  and
-		- A side-by-side barchart	
-		  to display the data graphically.
-		  (At the time these notes were prepared,
-		  jamovi does not produce stacked barcharts; SPSS does.)
-
-* If you have **a quantitative variable to compare across two groups**,
-	you probably need:
-
-    - A **two-sample $t$-test** to analyze the data;
-		  and
-    - An error bar chart (and perhaps a boxplot)
-  		to display the data graphically.
+* If your RQ concerns the **difference between means in two groups**:
+  - Analysis of two means using, for example, a two-sample $t$-test.
+  - Displays using a error bar chart (and perhaps a boxplot).
 
 
 
