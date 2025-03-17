@@ -2,9 +2,6 @@
 
 # Introduction
 
-## Knowing the analysis to use
-
-
 **Before** you start to use jamovi or SPSS, you need to know *why* you need the software.
 
 * If your RQ concerns the **relationship between two qualitative variables**:
@@ -15,11 +12,6 @@
 * If your RQ concerns the **difference between means in two groups**:
   - Analysis of two means using, for example, a two-sample $t$-test.
   - Displays using a error bar chart (and perhaps a boxplot).
-
-
-
-## Data files
-
 
 The data files used in this document are available in Sect. \@ref(DataFiles).
 
