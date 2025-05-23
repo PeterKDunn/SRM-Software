@@ -34,7 +34,7 @@ the data introduced in Sect. \@ref(B12Data) are used.
 3. Click on the right-pointing arrow next to the **Plots** option from the bottom of the left-side screen.
 4. In the **Plots** section, select `Bar Plot`; then select **Bar Type** (either a `Side by side` bar chart, or a `Stacked` bar chart).
 
-```{r jamoviTwotFacePlant-Stacked-Barplot-new, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in jamovi", fig.align="center", out.width="50%"}
+```{r jamoviTwotFacePlant-Stacked-Barplot-new, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in jamovi.", fig.align="center", out.width="50%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot-Sidebyside.png" )
 ```
 
@@ -43,7 +43,7 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot-Sidebyside.png" )
    There are plenty of options, so feel free to experiment. 
    A useful one is to use for the **Y-Axis** is `Percentages` with the `within rows` option.
 
-```{r jamoviTwotFacePlant-Stacked-Barplot-options, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in jamovi", fig.align="center", out.width="50%"}
+```{r jamoviTwotFacePlant-Stacked-Barplot-options, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart in jamovi.", fig.align="center", out.width="50%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Barplot-Options.png" )
 ```
 
@@ -70,7 +70,7 @@ For this section, the data introduced in Sect. \@ref(jamoviLeanAngle) are used.
 4. You will have your graph in the jamovi Output window.
 
 
-```{r jamoviTwotFacePlant-Boxplot, echo=FALSE, fig.cap="Selecting the variables for a boxplot", fig.align="center", out.width="50%"}
+```{r jamoviTwotFacePlant-Boxplot, echo=FALSE, fig.cap="Selecting the variables for a boxplot.", fig.align="center", out.width="50%"}
 knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-Boxplot.png" )
 ```
 
