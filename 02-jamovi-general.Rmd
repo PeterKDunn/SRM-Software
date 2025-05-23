@@ -37,11 +37,11 @@ Before starting analysis with [jamovi](https://www.jamovi.org/) [@Software:jamov
 
 
 
-```{r jamoviVariables1, echo=FALSE, fig.cap="Click on the column headers to describe the variables", fig.align="center", out.width="50%"}
+```{r jamoviVariables1, echo=FALSE, fig.cap="Click on the column headers to describe the variables.", fig.align="center", out.width="50%"}
 knitr::include_graphics( "jamoviImages/jamovi-Vars2.png" )
 ```
    
-```{r jamoviVariablesSet, echo=FALSE, fig.cap="The information to fill in for each variable", fig.align="center", out.width="100%"}
+```{r jamoviVariablesSet, echo=FALSE, fig.cap="The information to fill in for each variable.", fig.align="center", out.width="100%"}
 knitr::include_graphics( "jamoviImages/jamovi-VarSet.png" )
 ```
    
