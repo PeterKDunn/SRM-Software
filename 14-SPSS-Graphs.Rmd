@@ -30,7 +30,7 @@ Provided you have done so, you can press **OK**.
 
 
 
-```{r SPSSGraphWarning, echo=FALSE, fig.cap="The warning after selecting Graphs", fig.align="center", out.width="85%"}
+```{r SPSSGraphWarning, echo=FALSE, fig.cap="The warning after selecting Graphs.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-Warning.png" )
 ```
 
@@ -47,7 +47,7 @@ When graphs are created in SPSS using the **Chart Builder**, the window shown in
 Select the **Options** item from the right-hand side of this window.
 
 
-```{r SPSSChartBuilder, echo=FALSE, fig.cap="The Chart Builder window", fig.align="center", out.width="85%"}
+```{r SPSSChartBuilder, echo=FALSE, fig.cap="The Chart Builder window.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/ChartBuilder.png" )
 ```
 
@@ -55,7 +55,7 @@ Then, change the **Chart size** to (say) 60% or a similar value (Fig.\ \@ref(fig
 Now, when you copy-and-paste the graph, the sizing will be more appropriate.
 
 
-```{r SPSSChartBuilderOptions, echo=FALSE, fig.cap="The warning after selecting Graphs", fig.align="center", out.width="85%"}
+```{r SPSSChartBuilderOptions, echo=FALSE, fig.cap="The warning after selecting Graphs.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/ChartBuilder-Options-Size.png" )
 ```
 
@@ -71,7 +71,7 @@ For this section, the data introduced in Sect. \@ref(SPSSB12Data) are used.
    Select **Bar** from the Gallery, then select the **second** template from the top row, and drag it to the canvas.
 
 
-```{r SPSSGraphSbS, echo=FALSE, fig.cap="Selecting a side-by-side bar chart", fig.align="center", out.width="85%"}
+```{r SPSSGraphSbS, echo=FALSE, fig.cap="Selecting a side-by-side bar chart.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindow-SbS.png" )
 ```
 
@@ -83,7 +83,7 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindow-SbS.png" )
    You will have your graph in the SPSS Output window.
 
 
-```{r SPSSGraphSbSAddVars, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart", fig.align="center", out.width="85%"}
+```{r SPSSGraphSbSAddVars, echo=FALSE, fig.cap="Adding the variables to create a side-by-side bar chart.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindows-VarsEntered2.png" )
 ```
 
@@ -114,7 +114,7 @@ For this section, the data introduced in Sect. \@ref(SPSSB12Data) are used.
 2. **Select the type of plot**.
    Select **Bar**, then select the **third** template from the top row, and drag it to the canvas (Fig.\ \@ref(fig:SPSSGraphSB)).
 
-```{r SPSSGraphSB, echo=FALSE, fig.cap="Selecting a stacked bar chart", fig.align="center", out.width="85%"}
+```{r SPSSGraphSB, echo=FALSE, fig.cap="Selecting a stacked bar chart.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindow-Stacked.png" )
 ```
 
@@ -125,7 +125,7 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-GraphicsWindow-Stacked.png" )
    You will have your graph in the SPSS Output window.
 
 
-```{r SPSSGraphSBAddVars, echo=FALSE, fig.cap="Adding the variables to create a stacked bar chart", fig.align="center", out.width="85%"}
+```{r SPSSGraphSBAddVars, echo=FALSE, fig.cap="Adding the variables to create a stacked bar chart.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-Stacked-VarsEntered.png" )
 ```
 
@@ -150,7 +150,7 @@ For this section, the data introduced in Sect. \@ref(SPSSLeanAngle) are used.
 2. **Select the type of plot**.
    Select **Boxplot**, then select the **first** template from the top row, and drag it to the canvas (Fig.\ \@ref(fig:SPSSGraphBoxplotSelect)).
 
-```{r SPSSGraphBoxplotSelect, echo=FALSE, fig.cap="Selecting a boxplot", fig.align="center", out.width="85%"}
+```{r SPSSGraphBoxplotSelect, echo=FALSE, fig.cap="Selecting a boxplot.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-Boxplot-Drag.png" )
 ```
 
@@ -159,7 +159,7 @@ knitr::include_graphics( "SPSSImages/Graphics-Boxplot-Drag.png" )
 4. Press **OK**. 
    You will have your graph in the SPSS Output window.
 
-```{r SPSSGraphBoxplotAddVars, echo=FALSE, fig.cap="Adding the variables to create a boxplot", fig.align="center", out.width="85%"}
+```{r SPSSGraphBoxplotAddVars, echo=FALSE, fig.cap="Adding the variables to create a boxplot.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-Boxplot-VarsEntered.png" )
 ```
 
@@ -186,7 +186,7 @@ For this section, the data introduced in Sect. \@ref(SPSSLeanAngle) are used.
 2. **Select the type of plot**.
    Select **Bar**, then select the **third** template from the **second row**, and drag it to the canvas (Fig.\ \@ref(fig:SPSSGraphErrorbarSelect)).
 
-```{r SPSSGraphErrorbarSelect, echo=FALSE, fig.cap="Selecting an error bar chart", fig.align="center", out.width="85%"}
+```{r SPSSGraphErrorbarSelect, echo=FALSE, fig.cap="Selecting an error bar chart.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-ErrorBar-Drag.png" )
 ```
 
@@ -196,7 +196,7 @@ knitr::include_graphics( "SPSSImages/Graphics-ErrorBar-Drag.png" )
 4. Press **OK**. 
    You will have your graph in the SPSS Output window.
 
-```{r SPSSGraphErrorbarAddVars, echo=FALSE, fig.cap="Adding the variables to create an error bar chart", fig.align="center", out.width="85%"}
+```{r SPSSGraphErrorbarAddVars, echo=FALSE, fig.cap="Adding the variables to create an error bar chart.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Graphics-Boxplot-VarsEntered.png" )
 ```
 
