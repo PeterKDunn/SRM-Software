@@ -32,7 +32,7 @@ if( knitr::is_latex_output() ) {
          booktabs = TRUE,
          align = c("c", "c", "c"),
          #col.names=rep("", 3),
-         caption = "Lean-forward angles for older and younger women") %>%
+         caption = "Lean-forward angles for older and younger women.") %>%
     add_header_above(header = c("Younger women " = 2, 
                                 "Older women " = 1), 
                      bold = TRUE, 
@@ -47,7 +47,7 @@ if( knitr::is_html_output() ) {
          booktabs = TRUE,
          align = c("c", "c", "c"),
          col.names = rep("", 3),
-         caption = "Lean-forward angles for older and younger women") %>%
+         caption = "Lean-forward angles for older and younger women.") %>%
     kable_styling(full_width = FALSE) %>%
     add_header_above(header = c("Younger women " = 2, 
                                 "Older women " = 1), 
@@ -58,7 +58,7 @@ if( knitr::is_html_output() ) {
 
 
 ```{block2, type="rmddatafile"}
-The data file (`forwardfall.sav`) can be downloaded in Sect. \@ref(DataFiles).
+The data file (`ForwardFall.csv`) can be downloaded in Sect. \@ref(DataFiles).
 
 You can download the data, and follow the instructions.
 ```
@@ -81,12 +81,12 @@ The quantitative variable (here, `LeanAngle`) should be declared as **Scale** in
 The qualitative variable (here, `Group`) should be declared as **Nominal** in the **Measure** column (Fig.\ \@ref(fig:SPSSFacePlantVariablesVV)).
 
 
-```{r SPSSFacePlantVariablesIn, echo=FALSE, fig.cap="The data in the Data View", fig.align="center", out.width="30%"}
+```{r SPSSFacePlantVariablesIn, echo=FALSE, fig.cap="The data in the Data View.", fig.align="center", out.width="30%"}
 knitr::include_graphics( "SPSSImages/FacePlant-Data.png" )
 ```
 
 
-```{r SPSSFacePlantVariablesVV, echo=FALSE, fig.cap="The Variable View", fig.align="center", out.width="100%"}
+```{r SPSSFacePlantVariablesVV, echo=FALSE, fig.cap="The Variable View.", fig.align="center", out.width="100%"}
 knitr::include_graphics( "SPSSImages/FacePlant-VarView.png" )
 ```
 
@@ -95,7 +95,7 @@ The two age groups are defined so that a `1` represents younger women, and a `2`
 Since this is arbitrary, we tell SPSS this by setting the  **Values** in the **Variable View** (Fig.\ \@ref(fig:SPSSFacePlantVariablesLevels)).
 
 
-```{r SPSSFacePlantVariablesLevels, echo=FALSE, fig.cap="Defining the levels (Values) for the age group, in the Variable View", fig.align="center", out.width="85%"}
+```{r SPSSFacePlantVariablesLevels, echo=FALSE, fig.cap="Defining the levels (Values) for the age group, in the Variable View.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/FacePlant-Levels.png" )
 ```
 
@@ -108,7 +108,7 @@ knitr::include_graphics( "SPSSImages/FacePlant-Levels.png" )
    The **Test Variable** is the quantitative variable (here, `LeanAngle`), and the **Grouping Variable** is the qualitative variable (here, ``Group`); see Fig.\ \@ref(fig:SPSSFacePlantVarsIn).
 
 
-```{r SPSSFacePlantVarsIn, echo=FALSE, fig.cap="Entering the variables", fig.align="center", out.width="85%"}
+```{r SPSSFacePlantVarsIn, echo=FALSE, fig.cap="Entering the variables.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/FacePlant-Variables.png" )
 ```
 
@@ -119,7 +119,7 @@ knitr::include_graphics( "SPSSImages/FacePlant-Variables.png" )
    You will have your output in the SPSS Output window.
 
 
-```{r SPSSFacePlantVarsInwegcucwg, echo=FALSE, fig.cap="Teling SPSS which groups to compare", fig.align="center", out.width="50%"}
+```{r SPSSFacePlantVarsInwegcucwg, echo=FALSE, fig.cap="Teling SPSS which groups to compare.", fig.align="center", out.width="50%"}
 knitr::include_graphics( "SPSSImages/FacePlant-Groups.png" )
 ```
 
