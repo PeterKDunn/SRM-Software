@@ -19,7 +19,7 @@ Consider the face-plant data [@data:Wojcik:ForwardFall] [used in Exercise\ 30.11
 
 
 ```{block2, type="rmddatafile"}
-The data file (`forwardfall.csv`) can be downloaded in Sect. \@ref(DataFiles).
+The data file (`ForwardFall.csv`) can be downloaded in Sect. \@ref(DataFiles).
 
 You can download the data, and follow the instructions.
 ```
@@ -39,7 +39,7 @@ if( knitr::is_latex_output() ) {
          booktabs = TRUE,
          align = c("c", "c", "c"),
          #col.names=rep("", 3),
-         caption = "Lean-forward angles for older and younger women") %>%
+         caption = "Lean- angles for older and younger women.") %>%
     add_header_above(header = c("Younger women " = 2, 
                                 "Older women " = 1), 
                      bold = TRUE, 
@@ -54,7 +54,7 @@ if( knitr::is_html_output() ) {
          booktabs = TRUE,
          align = c("c", "c", "c"),
          col.names = rep("", 3),
-         caption = "Lean-forward angles for older and younger women") %>%
+         caption = "Lean- angles for older and younger women.") %>%
     kable_styling(full_width = FALSE) %>%
     add_header_above(header = c("Younger women " = 2, 
                                 "Older women " = 1), 
@@ -73,25 +73,25 @@ In the **Data** area, each row represents a unit of analysis (in this case, a pe
 Each unit of analysis gets two variables recorded: one is quantitative (**Lean angle (in degrees)**), and one is qualitative (**Age group**).
 So there are two columns in the data, one for each variable.
 
-The order of the variables doesn't matter, but here the quantitative variable is listed first (the lean-forward angle), and then the qualitative variable (the age group).
+The order of the variables doesn't matter, but here the quantitative variable is listed first (the lean- angle), and then the qualitative variable (the age group).
 
 
 The variables need to be properly set up (by double-clicking on the variable names); see Figs.\ \@ref(fig:jamoviTwotFacePlantvarsAngle) and \@ref(fig:jamoviTwotFacePlantAgegroup).
 
 
-```{r jamoviTwotFacePlantData, echo=FALSE, fig.cap="The data entered in jamovi", fig.align="center", out.width="30%"}
+```{r jamoviTwotFacePlantData, echo=FALSE, fig.cap="The data entered in jamovi.", fig.align="center", out.width="30%"}
 knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-Data.png" )
 ```
 
 
 
-```{r jamoviTwotFacePlantvarsAngle, echo=FALSE, fig.cap="Describing the quantitative variable", fig.align="center", out.width="70%"}
+```{r jamoviTwotFacePlantvarsAngle, echo=FALSE, fig.cap="Describing the quantitative variable.", fig.align="center", out.width="70%"}
 knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-vars-Angle.png" )
 ```
 
 
 
-```{r jamoviTwotFacePlantAgegroup, echo=FALSE, fig.cap="Describing the qualitative variable", fig.align="center", out.width="70%"}
+```{r jamoviTwotFacePlantAgegroup, echo=FALSE, fig.cap="Describing the qualitative variable.", fig.align="center", out.width="70%"}
 knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-vars-Agegroup.png" )
 ```
 
@@ -106,7 +106,7 @@ In the jamovi worksheet, the values `1` and `2` were entered, but jamovi shows w
 
 
 
-Remember, **this data set is available from the textbook as `forwardfall.csv`** in [Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+Remember, **this data set is available from the textbook as `ForwardFall.csv`** in [Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
 You can download the data and follow along if you wish.
 
 1. **Use the jamovi menu**: select **Analyses> T-Tests> Independent Samples T-Test**
@@ -130,7 +130,7 @@ The one-tailed $P$-value will be half the two-tailed $P$-value.
 
 
 
-```{r jamoviTwotFacePlant-TTest, echo=FALSE, fig.cap="Enter the variables", fig.align="center", out.width="70%"}
+```{r jamoviTwotFacePlant-TTest, echo=FALSE, fig.cap="Enter the variables"., fig.align="center", out.width="70%"}
 knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-TTest.png" )
 ```
 
