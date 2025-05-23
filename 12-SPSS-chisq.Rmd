@@ -52,7 +52,7 @@ if( knitr::is_latex_output() ) {
         booktabs = TRUE,
         longtable = FALSE,
         align = c("r", "r", "r"),
-        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
+        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient.") %>%
     row_spec(0, bold = TRUE) %>%
     row_spec(3, bold = TRUE) %>%
     column_spec(4, bold = TRUE) %>%
@@ -66,7 +66,7 @@ if( knitr::is_html_output() ) {
         booktabs = TRUE,
         longtable = FALSE,
         align = c("r","r", "r"),
-        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
+        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient.") %>%
     row_spec(0, bold = TRUE) %>%
     row_spec(3, bold = TRUE) %>%
     column_spec(4, bold = TRUE)
@@ -93,7 +93,7 @@ That means that there will be $124$ rows of data: one for each person (unit of a
 In SPSS, the data are entered as shown in Fig.\ \@ref(fig:SPSSVariables1a), but there would be $124$\ rows.
 
 
-```{r SPSSVariables1a, echo=FALSE, fig.cap="Data entered into SPSS", fig.align="center", out.width="20%"}
+```{r SPSSVariables1a, echo=FALSE, fig.cap="Data entered into SPSS.", fig.align="center", out.width="20%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-Data-Long.png" )
 ```
 
@@ -102,7 +102,7 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-Data-Long.png" )
 The **Variable View** would describe these two variables; see Fig.\ \@ref(fig:SPSSVariables2).
 
 
-```{r SPSSVariables2, echo=FALSE, fig.cap="Describing the variable in the Variable View window", fig.align="center", out.width="100%"}
+```{r SPSSVariables2, echo=FALSE, fig.cap="Describing the variable in the Variable View window.", fig.align="center", out.width="100%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-VarView-Long.png" )
 ```
 
@@ -122,7 +122,7 @@ Once the data are entered, we can begin analysis:
 
 
 
-```{r SPSSB12VariablesIn, echo=FALSE, fig.cap="Add the variables", fig.align="center", out.width="85%"}
+```{r SPSSB12VariablesIn, echo=FALSE, fig.cap="Add the variables.", fig.align="center", out.width="85%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-Analysis.png" )
 ```
 
@@ -135,7 +135,7 @@ knitr::include_graphics( "SPSSImages/Chisq/B12-Analysis.png" )
    You will have your output in the SPSS Output window.
 
 
-```{r SPSSB12Analysis, echo=FALSE, fig.cap="Select the options", fig.align="center", out.width="55%"}
+```{r SPSSB12Analysis, echo=FALSE, fig.cap="Select the options.", fig.align="center", out.width="55%"}
 knitr::include_graphics( "SPSSImages/Chisq/B12-Analysis-Ticks.png" )
 ```
 
