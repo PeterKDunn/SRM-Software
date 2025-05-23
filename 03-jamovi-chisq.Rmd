@@ -57,7 +57,7 @@ if( knitr::is_latex_output() ) {
         booktabs = TRUE,
         longtable = FALSE,
         align = c("r", "r", "r"),
-        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
+        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient.") %>%
     row_spec(0, 
              bold = TRUE) %>%
     row_spec(3, 
@@ -74,7 +74,7 @@ if( knitr::is_html_output() ) {
         booktabs = TRUE,
         longtable = FALSE,
         align = c("r","r", "r"),
-        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient") %>%
+        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient.") %>%
     row_spec(0, 
              bold = TRUE) %>%
     row_spec(3, 
@@ -107,7 +107,7 @@ Each *column* in the jamovi data represents one *variable*.
 ```
 
 
-```{r jamoviChisqB12DataLong, echo=FALSE, fig.cap="The B12 data entered into jamovi", fig.align="center", out.width="80%"}
+```{r jamoviChisqB12DataLong, echo=FALSE, fig.cap="The B12 data entered into jamovi.", fig.align="center", out.width="80%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Data-Long.png" )
 ```
 
@@ -131,7 +131,7 @@ Once the data are entered, we can begin analysis:
 
 1. **Use the menu:** select **Analyses> Frequencies> Independent samples ($\chi^2$ test of association)**
 
-```{r jamoviChisqB12Menu, echo=FALSE, fig.cap="Select the correct test", fig.align="center", out.width="60%"}
+```{r jamoviChisqB12Menu, echo=FALSE, fig.cap="Select the correct test.", fig.align="center", out.width="60%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Menu2.png" )
 ```
 
@@ -141,7 +141,7 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Menu2.png" )
 In Table\ \@ref(tab:jamoviB12Data), **Diet** is in the rows of the table, for example.
 
 
-```{r jamoviChisqB12Analysis, echo=FALSE, fig.cap="Enter the variables", fig.align="center", out.width="50%"}
+```{r jamoviChisqB12Analysis, echo=FALSE, fig.cap="Enter the variables.", fig.align="center", out.width="50%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis.png" )
 ```
 
@@ -155,7 +155,7 @@ knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis.png" )
 - Select `Confidence intervals`: this shows the CI for the odds ratio, and for the difference between the proportions.
 
 
-```{r jamoviChisqB12AnalysisStatsTicks, echo=FALSE, fig.cap="Check the correct options", fig.align="center", out.width="60%"}
+```{r jamoviChisqB12AnalysisStatsTicks, echo=FALSE, fig.cap="Check the correct options.", fig.align="center", out.width="60%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis-Stats-Ticks.png" )
 ```
 
@@ -173,7 +173,7 @@ Under the area where you selected the **Statistics**, select the right-pointing 
 * Select `Row` under the **Percentages** section; and/or
 * Select `Column` under the **Percentages** section.
 
-```{r jamoviChisqB12AnalysisCellsTicks, echo=FALSE, fig.cap="Select what to show in the table", fig.align="center", out.width="60%"}
+```{r jamoviChisqB12AnalysisCellsTicks, echo=FALSE, fig.cap="Select what to show in the table.", fig.align="center", out.width="60%"}
 knitr::include_graphics( "jamoviImages/Chisq/B12-Analysis-Cells-Ticks.png" )
 ```
 
