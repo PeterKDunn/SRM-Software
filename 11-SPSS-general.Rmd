@@ -42,7 +42,7 @@ Before starting analysis with SPSS [@Software:SPSS], here are some **general tip
     - Asking SCI110 staff, including using the Canvas *Discussions*.
 
 
-```{r SPSSVariables1, echo=FALSE, fig.cap="Information that can be given for each variable in the Variable View window)", fig.align="center", out.width="100%"}
+```{r SPSSVariables1, echo=FALSE, fig.cap="Information that can be given for each variable in the Variable View window)"., fig.align="center", out.width="100%"}
 knitr::include_graphics( "SPSSImages/VarViewNames.png" )
 ```
 
