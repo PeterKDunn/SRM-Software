@@ -130,7 +130,7 @@ The one-tailed $P$-value will be half the two-tailed $P$-value.
 
 
 
-```{r jamoviTwotFacePlant-TTest, echo=FALSE, fig.cap="Enter the variables"., fig.align="center", out.width="70%"}
+```{r jamoviTwotFacePlant-TTest, echo=FALSE, fig.cap="Enter the variables.", fig.align="center", out.width="70%"}
 knitr::include_graphics( "jamoviImages/TwoInd/FacePlant-TTest.png" )
 ```
 
