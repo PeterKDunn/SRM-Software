@@ -1,0 +1,148 @@
+---
+title: "Science Research Methods: Software"
+subtitle:  "An introduction to quantitative research and statistics: Using software"
+author: "Peter K. Dunn"
+geometry: margin=27mm
+description: "Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)"
+output: webex::webex_default
+cover-image: "images/cover-Software"
+date: "Last updated: December 12, 2025"
+bibliography: ["ReferenceList.bib"]
+biblio-style: plain
+link-citations: yes  
+documentclass: krantz
+always_allow_html: yes
+links-as-notes: true
+site: bookdown::bookdown_site
+colorlinks: yes
+#lot: no
+#lof: no
+fontsize: 11pt
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.7"
+---
+
+
+
+
+
+
+
+# Preface {-}
+
+<!-- TO RENDER -->
+<!-- # render_book("index.Rmd") -->
+<!-- # render_book("index.Rmd", "bookdown::pdf_book") -->
+<!-- # render_book("index.Rmd"); render_book("index.Rmd", "bookdown::pdf_book") -->
+<!-- To publish: bookdown::publish_book("SRM-software") -->
+
+
+
+This book has been prepared for use with the book 
+[*Scientific Research and Methodology*](https://peterkdunn.github.io/SRM-Textbook/),
+which is an introduction to quantitative research methods in the scientific, engineering and health disciplines.
+
+This book introduces the whole research process, from asking a research question to analysis and reporting of the data.
+The focus, however, is on the analysis of data.
+
+
+## Statistical software {-}
+
+This manual explains how to conduct some of the analyses in the book [*Scientific Research Method*](https://peterkdunn.github.io/SRM-Textbook/) using software.
+We discuss using [jamovi](https://www.jamovi.org/) [@Software:jamovi] and [SPSS](https://www.ibm.com/products/spss-statistics) [@Software:SPSS] only.
+
+jamovi is *free* and is like (but not exactly the same as) SPSS.
+From the [jamovi homepage (sic)](https://www.jamovi.org/):
+
+> jamovi is a new '3rd generation' statistical spreadsheet. 
+> designed from the ground up to be easy to use, jamovi is a compelling alternative to costly statistical products such as SPSS and SAS.
+
+
+
+
+## Callouts used on this book {-}
+
+The following callouts are used in this book:
+
+\BeginKnitrBlock{rmdobjectives}<div class="rmdobjectives">These chunks introduce the objectives for the chapters of the book.</div>\EndKnitrBlock{rmdobjectives}
+
+
+
+
+\BeginKnitrBlock{rmdtip}<div class="rmdtip">These chunks offer helpful information.</div>\EndKnitrBlock{rmdtip}
+
+
+
+
+\BeginKnitrBlock{rmdimportant}<div class="rmdimportant">These chunks highlight common mistakes or warnings, about a particular concept or about using a formula.</div>\EndKnitrBlock{rmdimportant}
+
+
+
+
+\BeginKnitrBlock{rmddatafile}<div class="rmddatafile">These chunks point to the data files being used, collated in Sect. \@ref(DataFiles), so you can download the data, and follow the instructions.</div>\EndKnitrBlock{rmddatafile}
+
+
+
+## Using statistical software rather than a spreadsheet {-}
+
+(The following information is based on [@mypapers:ScientificResearch].)
+
+Many people use spreadsheets (such as Microsoft Excel) rather than statistical software.
+But using spreadsheets requires extreme care; many extremely expensive and dangerous errors have been made through using spreadsheets [@altarawneh2017pilot], including problems [when reporting the 2020 COVID-19 pandemic](https://www.zdnet.com/article/excel-errors-microsofts-spreadsheet-may-be-hazardous-to-your-health/).
+
+These problems emerge for different reasons:
+  
+* Spreadsheets often change the entered data (for example, reformatting entries as dates if the spreadsheet *thinks* the data should be a date) in the interest of being 'user-friendly', even when not appropriate.
+  This has had dire consequences [@ziemann2016gene].
+* Many spreadsheets have errors in formulas [@panko1998hitting], but these are incredible difficult to locate and hence fix (@galletta1996spreadsheet, @panko2016we).
+* Spreadsheets do not leave a record of how the data have been analysed; for example, formulas can be very difficult to understand and parse.
+  Keeping a record of the analysis, new variables that have been created, and other operations with the data is called [**reproducible research**](#ReproducibleResearch).
+  Reproducibility ensures, among other advantages, that the results can be checked by others.
+* Excel has bugs (@keeling2004numerical, @melard2014accuracy) even in very basic operations (@berger2007nonstandard, @hargreaves2010polynomial).
+  After trying to fix these bugs, sometimes they are made even worse [@mccullough2002accuracy].
+
+Spreadsheets can be used for research and analysis... but you must be very careful!
+Many of the problems are due to human error, and some emerge because Excel is being used for purposes it is not really designed for (i.e. scientific analysis).
+
+
+#### Using jamovi and SPSS {-}
+
+### jamovi {-}
+
+We **strongly recommend** installing the [most recent **stable**, **desktop** (not online) version of jamovi](https://www.jamovi.org/download.html).
+
+
+
+
+### SPSS {-}
+
+All recent versions of SPSS work in similar ways.
+SPSS is installed in computer labs and available using [*USC Anywhere*](https://anywhere.usc.edu.au/vpn/index.html).
+
+
+
+
+
+
+## Learning Outcomes {-}
+
+	
+In this book, you will learn to:
+
+* Use jamovi to conduct chi-square tests.
+* Use jamovi to conduct two-sample $t$-tests.
+* Use jamovi to create graphs.
+* Use SPSS to conduct chi-square tests.
+* Use SPSS to conduct two-sample $t$-tests.
+* Use SPSS to create graphs.
+
+
+
+
+
+
+
+## How to cite this book {-}
+
+Peter K. Dunn (2019). *Scientific Research Methods: Software manual*.
+https://peterkdunn.github.io/SRM-software/
