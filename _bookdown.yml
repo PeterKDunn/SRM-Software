@@ -1,5 +1,5 @@
 #book_filename: bookdown
-output_dir: _book
+output_dir: docs
 new_session: yes
 book_filename: "SRM_software.Rmd"
 before_chapter_script: ["R/setup.R"]
