@@ -15,7 +15,7 @@
 
 Two independent sample $t$-tests are used to compare the means of two separate groups.
 
-Consider the face-plant data [@data:Wojcik:ForwardFall] [used in Exercise\ 30.11 of the textbook](https://bookdown.org/pkaldunn/SRM-Textbook/AnalysisTwoMeans.html) (Table\ \@ref(tab:SPSSFacePlant)).
+Consider the face-plant data [@data:Wojcik:ForwardFall] [used in Exercise\ 30.11 of the textbook](https://peterkdunn.github.io/SRM-Textbook/AnalysisTwoMeans.html) (Table\ \@ref(tab:SPSSFacePlant)).
 
 
 ```{r SPSSFacePlant, echo=FALSE}

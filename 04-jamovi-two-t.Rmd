@@ -14,7 +14,7 @@
 
 Two independent sample $t$-tests are used to compare the means of two separate groups.
 
-Consider the face-plant data [@data:Wojcik:ForwardFall] [used in Exercise\ 30.11 of the textbook](https://bookdown.org/pkaldunn/SRM-Textbook/AnalysisTwoMeans.html) (Table\ \@ref(tab:jamoviFacePlant)).
+Consider the face-plant data [@data:Wojcik:ForwardFall] [used in Exercise\ 30.11 of the textbook](https://peterkdunn.github.io/SRM-Textbook/AnalysisTwoMeans.html) (Table\ \@ref(tab:jamoviFacePlant)).
 
 
 
@@ -106,7 +106,7 @@ In the jamovi worksheet, the values `1` and `2` were entered, but jamovi shows w
 
 
 
-Remember, **this data set is available from the textbook as `ForwardFall.csv`** in [Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+Remember, **this data set is available from the textbook as `ForwardFall.csv`** in [Appendix\ A](https://peterkdunn.github.io/SRM-Textbook/AppendixDataSets.html).
 You can download the data and follow along if you wish.
 
 1. **Use the jamovi menu**: select **Analyses> T-Tests> Independent Samples T-Test**

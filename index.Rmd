@@ -37,7 +37,7 @@ knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackag
 <!-- # render_book("index.Rmd") -->
 <!-- # render_book("index.Rmd", "bookdown::pdf_book") -->
 <!-- # render_book("index.Rmd"); render_book("index.Rmd", "bookdown::pdf_book") -->
-<!-- To publish: bookdown::publish_book("SRM-software) -->
+<!-- To publish: bookdown::publish_book("SRM-software") -->
 
 
 
@@ -45,7 +45,7 @@ This book has been prepared for use with the book
 `r if (knitr::is_latex_output()) {
    '*Scientific Research and Methodology*,'
 } else {
-   '[*Scientific Research and Methodology*](https://bookdown.org/pkaldunn/SRM-Textbook/),'
+   '[*Scientific Research and Methodology*](https://peterkdunn.github.io/SRM-Textbook/),'
 }`
 which is an introduction to quantitative research methods in the scientific, engineering and health disciplines.
 
@@ -55,7 +55,7 @@ The focus, however, is on the analysis of data.
 
 ## Statistical software {-}
 
-This manual explains how to conduct some of the analyses in the book [*Scientific Research Method*](https://bookdown.org/pkaldunn/SRM-Textbook/) using software.
+This manual explains how to conduct some of the analyses in the book [*Scientific Research Method*](https://peterkdunn.github.io/SRM-Textbook/) using software.
 We discuss using [jamovi](https://www.jamovi.org/) [@Software:jamovi] and [SPSS](https://www.ibm.com/products/spss-statistics) [@Software:SPSS] only.
 
 jamovi is *free* and is like (but not exactly the same as) SPSS.
@@ -160,4 +160,4 @@ In this book, you will learn to:
 ## How to cite this book {-}
 
 Peter K. Dunn (2019). *Scientific Research Methods: Software manual*.
-https://bookdown.org/pkaldunn/SRM-software/
+https://peterkdunn.github.io/SRM-software/
