@@ -14,7 +14,7 @@
 ## Introduction {#B12Data}
 
 RQs comparing *two qualitative variables* require count data that can be compiled into a two-way table of counts. 
-Consider data [@data:Gammon2012:B12] [in Exercise\ 31.16 of the textbook](https://bookdown.org/pkaldunn/SRM-Textbook/AnalysisOddsRatio.html) (Table\ \@ref(tab:jamoviB12Data)).
+Consider data [@data:Gammon2012:B12] [in Exercise\ 31.16 of the textbook](https://peterkdunn.github.io/SRM-Textbook/AnalysisOddsRatio.html) (Table\ \@ref(tab:jamoviB12Data)).
 
 
 
@@ -25,7 +25,7 @@ You can download the data, and follow the instructions.
 
 
 **This data set is available from the textbook as `B12-Long`** in 
-[Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
+[Appendix\ A](https://peterkdunn.github.io/SRM-Textbook/AppendixDataSets.html).
 You can download the data and follow along if you wish.
 
 There are *two qualitative variables* being measured on each individual:
@@ -124,7 +124,7 @@ Your data is now set up and ready to use.
 ## Analysis {#jamoviChiSquareAnalysis}
 
 
-Remember that **this data set is available from the textbook as `B12-Long`** in [Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html)
+Remember that **this data set is available from the textbook as `B12-Long`** in [Appendix\ A](https://peterkdunn.github.io/SRM-Textbook/AppendixDataSets.html)
 
 
 Once the data are entered, we can begin analysis:

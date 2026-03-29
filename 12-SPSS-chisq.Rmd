@@ -15,7 +15,7 @@
 $\chi^2$ tests ('*ki*-squared tests') are used to analyse data where each unit of analysis has *two qualitative variables* measured (or observed) about it.
 This type of data can be compiled into a two-way table of counts. 
 
-Consider data [@data:Gammon2012:B12] [used in Exercise 31.16 of the textbook](https://bookdown.org/pkaldunn/SRM-Textbook/AnalysisOddsRatio.html) (Table\ \@ref(tab:SPSSB12Data)).
+Consider data [@data:Gammon2012:B12] [used in Exercise 31.16 of the textbook](https://peterkdunn.github.io/SRM-Textbook/AnalysisOddsRatio.html) (Table\ \@ref(tab:SPSSB12Data)).
 
 *Two qualitative variables* being measured on each individual:
 

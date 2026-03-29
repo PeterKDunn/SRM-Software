@@ -6,7 +6,7 @@ geometry: margin=27mm
 description: "Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)"
 output: webex::webex_default
 cover-image: "images/cover-Software"
-date: "Last updated: `r  format(Sys.time(), '%B %d, %Y')`"
+date: "Last updated: December 12, 2025"
 bibliography: ["ReferenceList.bib"]
 biblio-style: plain
 link-citations: yes  
@@ -23,10 +23,7 @@ monofontoptions: "Scale=0.7"
 ---
 
 
-```{r echo=FALSE, results='asis'}
-options(knitr.kable.NA = '')
-knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackage{xcolor}', x, fixed = TRUE)})
-```
+
 
 
 
@@ -42,11 +39,7 @@ knit_hooks$set(document = function(x) {sub('\\usepackage[]{color}', '\\usepackag
 
 
 This book has been prepared for use with the book 
-`r if (knitr::is_latex_output()) {
-   '*Scientific Research and Methodology*,'
-} else {
-   '[*Scientific Research and Methodology*](https://peterkdunn.github.io/SRM-Textbook/),'
-}`
+[*Scientific Research and Methodology*](https://peterkdunn.github.io/SRM-Textbook/),
 which is an introduction to quantitative research methods in the scientific, engineering and health disciplines.
 
 This book introduces the whole research process, from asking a research question to analysis and reporting of the data.
@@ -71,30 +64,22 @@ From the [jamovi homepage (sic)](https://www.jamovi.org/):
 
 The following callouts are used in this book:
 
-```{block2, type="rmdobjectives"}
-These chunks introduce the objectives for the chapters of the book.
-```
+\BeginKnitrBlock{rmdobjectives}<div class="rmdobjectives">These chunks introduce the objectives for the chapters of the book.</div>\EndKnitrBlock{rmdobjectives}
 
 
 
 
-```{block2, type="rmdtip"}
-These chunks offer helpful information.
-```
+\BeginKnitrBlock{rmdtip}<div class="rmdtip">These chunks offer helpful information.</div>\EndKnitrBlock{rmdtip}
 
 
 
 
-```{block2, type="rmdimportant"}
-These chunks highlight common mistakes or warnings, about a particular concept or about using a formula.
-```
+\BeginKnitrBlock{rmdimportant}<div class="rmdimportant">These chunks highlight common mistakes or warnings, about a particular concept or about using a formula.</div>\EndKnitrBlock{rmdimportant}
 
 
 
 
-```{block2, type="rmddatafile"}
-These chunks point to the data files being used, collated in Sect. \@ref(DataFiles), so you can download the data, and follow the instructions.
-```
+\BeginKnitrBlock{rmddatafile}<div class="rmddatafile">These chunks point to the data files being used, collated in Sect. \@ref(DataFiles), so you can download the data, and follow the instructions.</div>\EndKnitrBlock{rmddatafile}
 
 
 
