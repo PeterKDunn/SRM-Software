@@ -7,8 +7,8 @@ The following data sets are available for download.
 
 **Data**           |  **Software**   | **Reference**                    | **Download**                         
 :------------------+:---------------:+:--------------------------------:+:--------------------------------------------:
-B12 data           | jamovi          | Sect. \@ref(jamoviChisquare)     | [`B12-Long.csv`](./Data/B12-Long.csv)   
-B12 data           | SPSS            | Sect. \@ref(SPSSOR)              | [`B12-Long.sav`](./Data/B12-Long.sav) 
-Face-plant\ data   | jamovi          | Sect. \@ref(jamoviTwoSampleT)    | [`forwardfall.csv`](./Data/forwardfall.csv)       
-Face-plant\ data   | SPSS            | Sect. \@ref(SPSSTwoSampleT)      | [`forwardfall.sav`](./Data/forwardfall.sav)   
+B12-Long data      | jamovi          | Sect. \@ref(jamoviChisquare)     | [`B12-Long.csv`](./Data/B12-Long.csv)   
+B12-Long data      | SPSS            | Sect. \@ref(SPSSOR)              | [`B12-Long.sav`](./Data/B12-Long.sav) 
+Face-plant data    | jamovi          | Sect. \@ref(jamoviTwoSampleT)    | [`forwardfall.csv`](./Data/forwardfall.csv)       
+Face-plant data    | SPSS            | Sect. \@ref(SPSSTwoSampleT)      | [`forwardfall.sav`](./Data/forwardfall.sav)   
 
