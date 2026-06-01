@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 SPSS: general information | Science Research Methods: Software</title>
+  <title>3.2 Bar charts | Science Research Methods: Software</title>
   <meta name="description" content="Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 SPSS: general information | Science Research Methods: Software" />
+  <meta property="og:title" content="3.2 Bar charts | Science Research Methods: Software" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/images/cover-Software" />
   <meta property="og:description" content="Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 SPSS: general information | Science Research Methods: Software" />
+  <meta name="twitter:title" content="3.2 Bar charts | Science Research Methods: Software" />
   
   <meta name="twitter:description" content="Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)" />
   <meta name="twitter:image" content="/images/cover-Software" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="jamoviTwoSampleNumericalSummaries.html"/>
-<link rel="next" href="SPSSOR.html"/>
+<link rel="prev" href="introduction-1.html"/>
+<link rel="next" href="boxplots.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -236,59 +236,33 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="SPSSGeneral" class="section level1 hasAnchor" number="6">
-<h1><span class="header-section-number">6</span> SPSS: general information<a href="SPSSGeneral.html#SPSSGeneral" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-
-<div class="rmdobjectives">
-<p><strong>Topics</strong> covered in this chapter:</p>
-<ul>
-<li>Tips for working with SPSS.</li>
-</ul>
-</div>
-<p>Before starting analysis with SPSS <span class="citation">(<a href="#ref-Software:SPSS">IBM Corp 2016</a>)</span>, here are some <strong>general tips</strong>:</p>
-<ul>
-<li>In general, you cannot download a copy of SPSS for use at home (which you <em>can</em> do with jamovi).</li>
-<li><em>Except for graphs</em>, SPSS output should <strong>not</strong> be presented in reports or presentations.<br />
-Instead, the information from SPSS output should be used to construct proper tables, or to produce proper conclusions.</li>
-<li>SPSS has two worksheets sheets; <strong>both</strong> must be set up correctly (you can switch between the two worksheets by clicking on these at the bottom of the SPSS window):
-<ul>
-<li>The <strong>Data View</strong>, which contains the data.</li>
-<li>The <strong>Variable View</strong>, which contains information <em>about</em> each variable.</li>
-</ul></li>
-<li>In SPSS (as with most statistical software), <em>each row represents one unit of analysis</em> in the <strong>Data View</strong>.</li>
-<li>In SPSS (as with most statistical software), <em>each column represents one variable</em> in the <strong>Data View</strong>.</li>
-<li>At the top of each column (but <strong>not</strong> in Row 1!) is the <em>name</em> of the variable;</li>
-<li>When setting up the <strong>Variable View</strong>, many columns can be filled in (Fig. <a href="SPSSGeneral.html#fig:SPSSVariables1">6.1</a>).
-These are the important columns to get right (the others aren’t important for our purposes):
-<ul>
-<li><strong>Name</strong>: A short description of the variable (with no spaces or punctuation!); for example <code>DiaBP</code>.</li>
-<li><strong>Type</strong>: Usually <strong>Numeric</strong> (apart from <em>names</em> which can be <strong>String</strong>).</li>
-<li><strong>Label</strong>: A fuller description of the variable. This is what will appear in tables and graphs to describe the variable.
-For example <code>Diastolic blood pressure (in mm Hg)</code>.</li>
-<li><strong>Values</strong>: For <em>qualitative</em> variables only: tell SPSS what each number represents (for example, does a <code>1</code> represent females, or males?)</li>
-<li><strong>Measure</strong>: <em>This is important</em>:
-You must tell SPSS whether each variable is nominal, ordinal, or scale (i.e. quantitative) by using the drop-down options.</li>
-</ul></li>
-<li>You can get help with using SPSS by:
-<ul>
-<li>Using <a href="https://www.linkedin.com/learning/">LinkedIn Learning</a>.</li>
-<li>Watching software screencasts on Canvas.</li>
-<li>Borrowing books in the library.</li>
-<li>Asking SCI110 staff, including using the Canvas <em>Discussions</em>.</li>
-</ul></li>
-</ul>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SPSSVariables1"></span>
-<img src="SPSSImages/VarViewNames.png" alt="Information that can be given for each variable in the Variable View window)." width="100%" />
+<div id="bar-charts" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Bar charts<a href="bar-charts.html#bar-charts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="creating-bar-charts" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Creating bar charts<a href="bar-charts.html#creating-bar-charts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For this section, the data introduced in Sect. <a href="B12Data.html#B12Data">1.1</a> are used.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Use the jamvoi menu:</strong> select <strong>Plot</strong>.</li>
+<li><strong>Add the variables</strong>.
+Add the variables to the rows and columns (in this case, the <code>Categorical Variable</code> is <code>Diet</code>, and the <code>Grouping Variable</code> is <code>B12</code>).</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:jamoviTwotFacePlant-SelectBar"></span>
+<img src="jamoviImages/Chisq/B12-SelectBarplot.png" alt="Adding the variables to create a side-by-side bar chart in jamovi." width="70%" />
 <p class="caption">
-FIGURE 6.1: Information that can be given for each variable in the Variable View window).
+FIGURE 3.1: Adding the variables to create a side-by-side bar chart in jamovi.
 </p>
 </div>
-
+<p>Your graph will appear in the jamovi Output window.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>To change the <strong>type</strong> of bar chart (i.e., stacked barchart or side-by-side barchart), select the <code>Group Options</code> and then the type of bar chart you would like:</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:jamoviTwotFacePlant-SelectBar-Type"></span>
+<img src="jamoviImages/Chisq/B12-SelectBarplot-Type.png" alt="Adding the variables to create a side-by-side bar chart in jamovi." width="70%" />
+<p class="caption">
+FIGURE 3.2: Adding the variables to create a side-by-side bar chart in jamovi.
+</p>
 </div>
-<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-Software:SPSS" class="csl-entry">
-IBM Corp. 2016. <em><span>IBM</span> <span>SPSS</span> Statistics for <span>W</span>indows, Version 24.0</em>. <span>IBM</span> Corp.
+<p>General changes— such as editing axis labels and titles—are discussed in Sect. <a href="jamoviEditingPlots.html#jamoviEditingPlots">3.5</a>.</p>
 </div>
 </div>
 <hr><div class="footer"><span style="color: gray; font-size:0.7em">Copyright &copy; Peter K. Dunn, 2025</span></div>
@@ -399,8 +373,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="jamoviTwoSampleNumericalSummaries.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="SPSSOR.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="boxplots.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
