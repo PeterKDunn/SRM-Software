@@ -17,8 +17,8 @@
 
 ## About jamovi
 
-* jamovi is a very **new** package (built on **R** [@Software:Rsoftware], which is very solid and reliable).
-*	jamovi is **free** to download, from [the jamovi webpage](https://www.jamovi.org/).
+* jamovi is a relatively **new** package (built on **R** [@Software:Rsoftware], which is very solid and reliable).
+*	jamovi is **free** to download, from [the jamovi webpage](https://www.jamovi.org/); avoid the Cloud version.
 *	*Except for graphs*, jamovi output should **not** be presented in reports or presentations.  
   Instead, the information from jamovi output should be used to construct proper tables, or to produce proper conclusions. 
 * The number of displayed decimal places (`dp`) or significant figures(`sf`) can be adjusted using the three vertical dots in the top right corner.

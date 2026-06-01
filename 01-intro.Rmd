@@ -2,6 +2,8 @@
 
 # Introduction
 
+## Before starting an analysis...
+
 **Before** you start to use jamovi or SPSS, you need to know *why* you need the software.
 
 * If your RQ concerns the **relationship between two qualitative variables**:

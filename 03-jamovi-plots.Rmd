@@ -85,17 +85,15 @@ General changes--- such as editing axis labels and titles---are discussed in Sec
 
 ##  Error bar charts {#jamoviErrorbar}
 
-FXI!!!!!!!!!!
-
 Error bar charts are produced as part of the *analysis*: see Chap. \@ref(jamoviTwoSampleT).
-
+These cannot be edited further.
 
 
 
 
 ## Editing plots {#jamoviEditingPlots}
 
-The options to **edit** plots are at the bottom of the plot window (Fig.\ \@ref(fig:jamoviEditBarChartOptions)).
+The options to **edit** box plots and bar charts are at the bottom of the plot window (Fig.\ \@ref(fig:jamoviEditBarChartOptions)).
 
 
 ```{r jamoviEditBarChartOptions, echo=FALSE, fig.cap="The plotting options for bar charts", fig.align="center", out.width="50%"}
