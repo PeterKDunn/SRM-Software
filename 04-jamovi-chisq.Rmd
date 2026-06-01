@@ -11,84 +11,10 @@
 ```
 
 
-## Introduction {#B12Data}
-
-RQs comparing *two qualitative variables* require count data that can be compiled into a two-way table of counts. 
-Consider data [@data:Gammon2012:B12] [in Exercise\ 31.16 of the textbook](https://peterkdunn.github.io/SRM-Textbook/AnalysisOddsRatio.html) (Table\ \@ref(tab:jamoviB12Data)).
-
-
-
-```{block2, type="rmddatafile"}
-The data file (`B12-Long.csv`) can be downloaded in Sect. \@ref(DataFiles).
-You can download the data, and follow the instructions.
-```
-
-
-**This data set is available from the textbook as `B12-Long`** in 
-[Appendix\ A](https://peterkdunn.github.io/SRM-Textbook/AppendixDataSets.html).
-You can download the data and follow along if you wish.
-
-There are *two qualitative variables* being measured on each individual:
-
-1.  Whether the person is vegetarian (or not);
-1.  Whether the person is B12 deficient (or not).
-
-Hence, jamovi will have *two columns*: one for each variable.
-There are $124$ units of analysis, so there are *$124$ rows* of data.
-
-
-```{r jamoviB12Data,  echo=FALSE}
-B12Data <- array( dim = c(3, 3) )
-
-rownames(B12Data) <- c("Vegetarians",
-                       "Non-vegetarians",
-                       "Total")
-colnames(B12Data) <- c("B12 deficient",
-                       "Not B12 deficient",
-                       "Total")
-
-B12Data[1, ] <- c(8, 26, 34)
-B12Data[2, ] <- c(8, 82, 90)
-B12Data[3, ] <- c(16, 108, 124)
-
-if( knitr::is_latex_output() ) {
-  kable(B12Data,
-        format = "latex",
-        booktabs = TRUE,
-        longtable = FALSE,
-        align = c("r", "r", "r"),
-        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient.") %>%
-    row_spec(0, 
-             bold = TRUE) %>%
-    row_spec(3, 
-             bold = TRUE) %>%
-    column_spec(4, 
-                bold = TRUE) %>%
-    row_spec(2, hline_after = TRUE) %>%
-    kable_styling(font_size = 10)
-  
-}
-if( knitr::is_html_output() ) {
-  kable(B12Data,
-        format = "html",
-        booktabs = TRUE,
-        longtable = FALSE,
-        align = c("r","r", "r"),
-        caption = "The number of vegetarian and non-vegetarian women who are (and are not) B12 deficient.") %>%
-    row_spec(0, 
-             bold = TRUE) %>%
-    row_spec(3, 
-             bold = TRUE) %>%
-    column_spec(4, 
-                bold = TRUE)
-}
-```
-
-
-
 
 ## Data entry {#jamoviChiSquareDataEntry}
 
+For this section, the data introduced in Sect. \@ref(B12Data) are used.
 In jamovi, the two columns are set up as follows:
 
 * **Diet**: `1` means 'Vegetarian' (i.e. in Row\ 1 of the data table), and `2` means 'Non-vegetarian' (i.e. in Row\ 2 of the data table in Table\ \@ref(tab:jamoviB12Data)).

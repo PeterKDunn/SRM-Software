@@ -11,18 +11,6 @@
 
 
 
-```{block2, type="rmddatafile"}
-The data files used in this section can be downloaded in Sect. \@ref(DataFiles).
-
-You can download the data, and follow the instructions.
-```
-
-
-Graphs in jamovi are sometimes produced as part of the **Analyses**,
-and sometimes through the **Exploration** menu.
-
-
-
 ## Bar charts (side-by-side; stacked) {#jamoviSideBySide}
 
 For this section,

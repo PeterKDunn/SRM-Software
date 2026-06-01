@@ -10,63 +10,9 @@
 
 
 
-## Introduction {#jamoviLeanAngle}
-
-Two independent sample $t$-tests are used to compare the means of two separate groups.
-
-Consider the face-plant data [@data:Wojcik:ForwardFall] [used in Exercise\ 30.11 of the textbook](https://peterkdunn.github.io/SRM-Textbook/AnalysisTwoMeans.html) (Table\ \@ref(tab:jamoviFacePlant)).
-
-
-
-```{block2, type="rmddatafile"}
-The data file (`ForwardFall.csv`) can be downloaded in Sect. \@ref(DataFiles).
-
-You can download the data, and follow the instructions.
-```
-
-
-```{r jamoviFacePlant, echo=FALSE}
-FacePlant <- cbind( 
-  c(29, 32, 34, 31, 33),
-  c(34, 27, 32, 28, 27),
-  c(18, 15, 23, 13, 12) 
-)
-
-if( knitr::is_latex_output() ) {
-  kable( FacePlant,
-         format = "latex",
-         longtable = FALSE,
-         booktabs = TRUE,
-         align = c("c", "c", "c"),
-         #col.names=rep("", 3),
-         caption = "Lean- angles for older and younger women.") %>%
-    add_header_above(header = c("Younger women " = 2, 
-                                "Older women " = 1), 
-                     bold = TRUE, 
-                     align = "c") %>%
-    kable_styling(font_size = 10)
-  
-}
-if( knitr::is_html_output() ) {
-  kable( FacePlant,
-         format = "html",
-         longtable =FALSE,
-         booktabs = TRUE,
-         align = c("c", "c", "c"),
-         col.names = rep("", 3),
-         caption = "Lean- angles for older and younger women.") %>%
-    kable_styling(full_width = FALSE) %>%
-    add_header_above(header = c("Younger women " = 2, 
-                                "Older women " = 1), 
-                     bold = TRUE, 
-                     align = "c")
-}
-```
-
-
-
 ## Data entry {#jamoviTwoSampleDataEntry}
 
+For this section, the data introduced in Sect. \@ref(jamoviLeanAngle) are used.
 In the **Data** area, each row represents a unit of analysis (in this case, a person), as is usual in jamovi (Fig.\ \@ref(fig:jamoviTwotFacePlantData)).
 
 
@@ -106,7 +52,7 @@ In the jamovi worksheet, the values `1` and `2` were entered, but jamovi shows w
 
 
 
-Remember, **this data set is available from the textbook as `ForwardFall.csv`** in [Appendix\ A](https://peterkdunn.github.io/SRM-Textbook/AppendixDataSets.html).
+Remember, **this data set is available from the textbook as `ForwardFall.csv`** in [Appendix\ A](https://bookdown.org/pkaldunn/SRM-Textbook/AppendixDataSets.html).
 You can download the data and follow along if you wish.
 
 1. **Use the jamovi menu**: select **Analyses> T-Tests> Independent Samples T-Test**
