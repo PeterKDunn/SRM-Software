@@ -41,11 +41,12 @@ fig:SPSSGraphBoxplotAddVars
 fig:SPSSGraphErrorbarSelect
 fig:SPSSGraphErrorbarAddVars
 introduction
+before-starting-an-analysis
 B12Data
 jamoviLeanAngle
 jamoviGeneral
 about-jamovi
-before-starting-an-analysis
+before-starting-an-analysis-1
 further-help
 jamoviPlots
 introduction-1

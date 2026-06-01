@@ -117,7 +117,7 @@ We **strongly recommend** installing the [most recent **stable**, **desktop** (n
 ### SPSS {-}
 
 All recent versions of SPSS work in similar ways.
-SPSS is installed in computer labs and available using [*USC Anywhere*](https://anywhere.usc.edu.au/vpn/index.html).
+SPSS is installed in computer labs and available using [*UniSC Anywhere*](https://Uniscanywhere.usc.edu.au).
 
 
 
@@ -144,5 +144,5 @@ In this book, you will learn to:
 
 ## How to cite this book {-}
 
-Peter K. Dunn (2019). *Scientific Research Methods: Software manual*.
+Peter K. Dunn (2026). *Scientific Research Methods: Software manual*.
 https://peterkdunn.github.io/SRM-software/
