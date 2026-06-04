@@ -25,7 +25,6 @@ bookdown::gitbook:
       vk: no
       all: null
 bookdown::pdf_book:
-  extra_dependencies: animate
   includes:
     in_header: [latex/preamble.tex]
     before_body: latex/before_body.tex
