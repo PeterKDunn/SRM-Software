@@ -6,13 +6,13 @@ geometry: margin=27mm
 description: "Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)"
 output: webex::webex_default
 cover-image: "images/cover-Software"
-date: "Last updated: June 01, 2026"
+date: "Last updated: June 04, 2026"
 bibliography: ["ReferenceList.bib"]
 biblio-style: plain
 link-citations: yes  
 documentclass: krantz
 always_allow_html: yes
-links-as-notes: true
+links-to-footnotes: false
 site: bookdown::bookdown_site
 colorlinks: yes
 #lot: no
@@ -39,7 +39,7 @@ monofontoptions: "Scale=0.7"
 
 
 This book has been prepared for use with the book 
-[*Scientific Research and Methodology*](https://peterkdunn.github.io/SRM-Textbook/),
+*Scientific Research and Methodology*,
 which is an introduction to quantitative research methods in the scientific, engineering and health disciplines.
 
 This book introduces the whole research process, from asking a research question to analysis and reporting of the data.
@@ -64,63 +64,62 @@ From the [jamovi homepage (sic)](https://www.jamovi.org/):
 
 The following callouts are used in this book:
 
-\BeginKnitrBlock{rmdobjectives}<div class="rmdobjectives">These chunks introduce the objectives for the chapters of the book.</div>\EndKnitrBlock{rmdobjectives}
+\BeginKnitrBlock{rmdobjectives}
+These chunks introduce the objectives for the chapters of the book.
+\EndKnitrBlock{rmdobjectives}
 
 
 
 
-\BeginKnitrBlock{rmdtip}<div class="rmdtip">These chunks offer helpful information.</div>\EndKnitrBlock{rmdtip}
+\BeginKnitrBlock{rmdtip}
+These chunks offer helpful information.
+\EndKnitrBlock{rmdtip}
 
 
 
 
-\BeginKnitrBlock{rmdimportant}<div class="rmdimportant">These chunks highlight common mistakes or warnings, about a particular concept or about using a formula.</div>\EndKnitrBlock{rmdimportant}
+\BeginKnitrBlock{rmdimportant}
+These chunks highlight common mistakes or warnings, about a particular concept or about using a formula.
+\EndKnitrBlock{rmdimportant}
 
 
 
 
-\BeginKnitrBlock{rmddatafile}<div class="rmddatafile">These chunks point to the data files being used, collated in Sect. \@ref(DataFiles), so you can download the data, and follow the instructions.</div>\EndKnitrBlock{rmddatafile}
+\BeginKnitrBlock{rmddatafile}
+These chunks point to the data files being used, collated in Sect. \@ref(DataFiles), so you can download the data, and follow the instructions.
+\EndKnitrBlock{rmddatafile}
 
 
 
 ## Using statistical software rather than a spreadsheet {-}
 
-(The following information is based on [@mypapers:ScientificResearch].)
+(The following information is taken from @mypapers:ScientificResearch (Sect.\ 1.5).)
 
-Many people use spreadsheets (such as Microsoft Excel) rather than statistical software.
-But using spreadsheets requires extreme care; many extremely expensive and dangerous errors have been made through using spreadsheets [@altarawneh2017pilot], including problems [when reporting the 2020 COVID-19 pandemic](https://www.zdnet.com/article/excel-errors-microsofts-spreadsheet-may-be-hazardous-to-your-health/).
+Using spreadsheets for storing and analysing data requires care.
+Expensive and dangerous errors have been made due to using spreadsheets [@altarawneh2017pilot].
+Some challenges with using spreadsheets include that:
 
-These problems emerge for different reasons:
-  
-* Spreadsheets often change the entered data (for example, reformatting entries as dates if the spreadsheet *thinks* the data should be a date) in the interest of being 'user-friendly', even when not appropriate.
-  This has had dire consequences [@ziemann2016gene].
-* Many spreadsheets have errors in formulas [@panko1998hitting], but these are incredible difficult to locate and hence fix (@galletta1996spreadsheet, @panko2016we).
-* Spreadsheets do not leave a record of how the data have been analysed; for example, formulas can be very difficult to understand and parse.
-  Keeping a record of the analysis, new variables that have been created, and other operations with the data is called [**reproducible research**](#ReproducibleResearch).
-  Reproducibility ensures, among other advantages, that the results can be checked by others.
-* Excel has bugs (@keeling2004numerical, @melard2014accuracy) even in very basic operations (@berger2007nonstandard, @hargreaves2010polynomial).
-  After trying to fix these bugs, sometimes they are made even worse [@mccullough2002accuracy].
+* spreadsheets may *change data* (e.g., reformatting entries as dates) when not appropriate [@ziemann2016gene].
+* spreadsheets may include *formulas with errors* that are difficult to locate and hence fix [@panko2016we; @Retraction:London:Excel].
+* spreadsheets *do not leave a record* of how the data were analysed or prepared.
+  Keeping a record of the analysis, preparation of variables, and other operations with the data is good scientific practice (*reproducible research*) [@simons2019reproducible].
+* spreadsheets often produce poor graphs [@su2008s].
 
-Spreadsheets can be used for research and analysis... but you must be very careful!
-Many of the problems are due to human error, and some emerge because Excel is being used for purposes it is not really designed for (i.e. scientific analysis).
+Problems with spreadsheets, as with any software, are often due to human error, but *spreadsheets make errors hard to find and hence hard to fix*. 
+Spreadsheets are useful for data collection and basic data manipulation, but are not designed for scientific analysis.
+Be careful using spreadsheets for research and analysis.
 
 
-#### Using jamovi and SPSS {-}
 
-### jamovi {-}
+#### Using jamovi {-}
 
 We **strongly recommend** installing the [most recent **stable**, **desktop** (not online) version of jamovi](https://www.jamovi.org/download.html).
 
 
-
-
-### SPSS {-}
+#### Using SPSS {-}
 
 All recent versions of SPSS work in similar ways.
 SPSS is installed in computer labs and available using [*UniSC Anywhere*](https://Uniscanywhere.usc.edu.au).
-
-
-
 
 
 
