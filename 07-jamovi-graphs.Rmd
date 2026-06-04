@@ -3,9 +3,9 @@
 
 
 ```{block2, type="rmdobjectives"}
-**Topics** covered in this tutorial:
-
-* Creating graphs in jamovi.
+In this chapter, you will learn to:
+  
+* Create graphs in jamovi.
 
 ```	
 
