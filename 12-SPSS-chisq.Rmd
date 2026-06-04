@@ -1,10 +1,10 @@
 # SPSS: inference for two odds or two proportions {#SPSSOR}
 
 ```{block2, type="rmdobjectives"}
-**Topics** covered in this tutorial:
+In this chapter, you will learn to:
   
-* How to use SPSS for comparing two odds (i.e., analysis using odds ratios).
-* How to use SPSS for comparing two proportions.
+* use SPSS for comparing two odds (i.e., analysis using odds ratios).
+* use SPSS for comparing two proportions.
 
 ```
 

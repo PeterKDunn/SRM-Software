@@ -2,9 +2,9 @@
 
 
 ```{block2, type="rmdobjectives"}
-**Topics** covered in this tutorial:
+In this chapter, you will learn to:
   
-* Learn how to use SPSS for comparing two means.
+* use SPSS for comparing two means.
 
 ```
 

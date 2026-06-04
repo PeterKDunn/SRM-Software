@@ -7,8 +7,8 @@
 
 
 ```{block2, type="rmdobjectives"}
-**Topics** covered in this chapter:
-
+In this chapter, you will learn:
+  
 * Tips for working with SPSS.
 
 ```
