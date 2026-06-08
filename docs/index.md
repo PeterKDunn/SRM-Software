@@ -6,7 +6,7 @@ geometry: margin=27mm
 description: "Using software for quantitative research in science and health (including research design, hypothesis testing and confidence intervals in common situations)"
 output: webex::webex_default
 cover-image: "images/cover-Software"
-date: "Last updated: June 04, 2026"
+date: "Last updated: June 08, 2026"
 bibliography: ["ReferenceList.bib"]
 biblio-style: plain
 link-citations: yes  
